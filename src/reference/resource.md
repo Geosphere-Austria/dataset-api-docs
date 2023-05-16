@@ -1,0 +1,193 @@
+(resources)=
+# Resources
+
+## Resource IDs
+
+### APOLIS short daily
+:ressource_id:
+    apolis_short-v1-1d-100m
+:verified:
+    yes
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/apolis_short-v1-1d-100m)".format(DATA_PORTAL_URL)}}
+
+### INCA hourly
+:ressource_id:
+    inca-v1-1h-1km
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/inca-v1-1h-1km)".format(DATA_PORTAL_URL)}}
+
+### HISTALP yearly (Austria only)
+:ressource_id:
+    histalp-v1-1y
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    None (API only)
+
+### Weather station - 10 minutes
+:ressource_id:
+    klima-v1-10min
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}
+
+### Weather station - hourly
+:ressource_id:
+    klima-v1-1h
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}
+
+### Weather station - daily
+:ressource_id:
+    klima-v1-1d
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}
+
+### Weather station - monthly
+:ressource_id:
+    klima-v1-1m
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}
+
+### Spartacus - daily
+:ressource_id:
+    spartacus-v1-1d-1km
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/spartacus-v1-1d-1km)".format(DATA_PORTAL_URL)}}
+
+### Spartacus - monthly
+:ressource_id:
+    spartacus-v1-1m-1km
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/spartacus-v1-1m-1km)".format(DATA_PORTAL_URL)}}
+
+### Synopdata
+:ressource_id:
+    synop-v1-1h
+:verified:
+    yes
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/synop-v1-1h)".format(DATA_PORTAL_URL)}}
+
+### TAWES
+:ressource_id:
+    tawes-v1-10min
+:verified:
+    no
+:Licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical, current
+:Data portal link:
+    None (API only)
+
+### WINFORE
+
+:ressource_id:
+    winfore-v1-1d-1km
+:verified:
+    no
+:Licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:Data portal link:
+    {{"[link]({}/dataset/winfore-v1-1d-1km)".format(DATA_PORTAL_URL)}}
+
+% TODO: evaluate if list or table, then remove either.
+%| Name                           | ressource_id              | verified | Licence | Dataportal link                                                          |
+%|--------------------------------|---------------------------|----------|---------|--------------------------------------------------------------------------|
+%| APOLIS short daily             | `apolis_short-v1-1d-100m` | yes      | {{LICENSE}}  | {{"[link]({}/dataset/apolis_short-v1-1d-100m)".format(DATA_PORTAL_URL)}} |
+%| INCA hourly                    | `inca-v1-1h-1km`          | yes      | {{LICENSE}}  | {{"[link]({}/dataset/inca-v1-1h-1km)".format(DATA_PORTAL_URL)}}          |
+%| HISTALP yearly (only Austria)  | `histalp-v1-1y`           | yes      | {{LICENSE}}  | API only                                                                 |
+%| Weather station hourly         | `klima-v1-1h`             | yes      | {{LICENSE}}  | {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}             |
+%| Weather station daily          | `klima-v1-1d`             | yes      | {{LICENSE}}  | {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}             |
+%| Weather station 10 minutes     | `klima-v1-10min`          | yes      | {{LICENSE}}  | {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}          |
+%| Weather station monthly        | `klima-v1-1m`             | yes      | {{LICENSE}}  | {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}             |
+%| Spartacus daily                | `spartacus-v1-1d-1km`     | yes      | {{LICENSE}}  | {{"[link]({}/dataset/spartacus-v1-1d-1km)".format(DATA_PORTAL_URL)}}     |
+%| Spartacus monthly              | `spartacus-v1-1m-1km`     | yes      | {{LICENSE}}  | {{"[link]({}/dataset/spartacus-v1-1m-1km)".format(DATA_PORTAL_URL)}}     |
+%| Synopdata                      | `synop-v1-1h`             | yes      | {{LICENSE}}  | {{"[link]({}/dataset/synop-v1-1h)".format(DATA_PORTAL_URL)}}             |
+%| TAWES weather stations         | `tawes-v1-10min`          | no       | {{LICENSE}}  | API only                                                                 |
+%| WINFORE                        | `winfore-v1-1d-1km`       | yes      | {{LICENSE}}  | {{"[link]({}/dataset/winfore-v1-1d-1km)".format(DATA_PORTAL_URL)}}       |
+
+## Verified data
+
+Data is verified with with the Austrian Quality Service (AQUAS). You can read more about data verification [here](https://www.zamg.ac.at/cms/de/klima/messnetze/datenpruefung).
