@@ -170,3 +170,26 @@ registriert. Siehe z.B. folgendes Beispiel:
 Diese Tabelle bedeutet, dass von 07:50 - 08:00 der Niederschlagsmelder `4` Minuten lang aktiv, und von 08:00 - 08:10
 sogar `10` Minuten lang aktiv war, die Menge jedoch unter 1/10mm lag. Von 08:10 - 08:20 regnete es weiter und es werden
 `0.2` mm Niederschlag erfasst.
+
+## Vorhersage Daten
+
+Bei Datensätzen des Modus' `forecast` handelt es sich um Vorhersagen. Alle Vorhersagen habe eine _reference_time_ welche
+den Zeitpunkt wiedergibt an dem diese Vorhersage erstellt wurde, `timestamps` hingegen zeigen den Zeitpunkt auf den sich
+ein konkreter Vorhersagewert bezieht (alle Angaben in UTC).
+
+### Der `forecast_offset` Parameter
+
+Eine Abfrage eines Vorhersagedatensatzes gibt üblicherweise die aktuellste Vorhersage zurück. Mittels des optionalen
+`forecast_offset` Parameters ist es auch möglich auf ältere Vorhersagen zuzugreifen. Der `forecast_offset` Parameter
+nimmt einen ganzzahligen Wert zwischen 0 und `max_forecast_offset` entgegen, welcher sozusagen dem Alter der Vorhersage
+entspricht. 0 ist immer die aktuellste Vorhersage, 1 die Vorletzte, usw.
+
+Der `max_forecast_offset` kann in den Metadaten (abrufbar unter `/{type}/{resource_id}/{mode}/metadata`) ausgelesen
+werden. Ebenso sind in den Metadaten die `available_forecast_reftimes` ersichtlich welche die `reference_time` der
+jeweiligen `forecast_offset`s anzeigt.
+
+Wenn ein `forecast_offset` gesetzt wurde, werden die Daten aller `timestamp`s aus einer Vorhersage zurück gegeben. Wenn
+jedoch kein `forecast_offset` gegeben ist werden aus der aktuellen Vorhersage nur jene Daten zurück gegeben, deren
+`timestamp` in der Zukunft liegt. Somit können sich die Antworten bei `forecast_offset` gleich 0 und keinem
+`forecast_offset` unterscheiden. Dies ist insbesondere dann der Fall wenn Vorhersagen seltener berechnet werden als die
+Abstände zwischen den `timestamp`s.
