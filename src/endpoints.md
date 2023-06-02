@@ -1,6 +1,4 @@
-# Overview
-
-## Endpoint Structure
+# Endpoint Structure
 
 An API endpoint (with the exception of the {{"[datasets]({}/datasets)".format(API_URL)}} endpoint) consists of four
 parts:
@@ -39,7 +37,7 @@ Not for every permutation of type, mode and resource_id exists and endpoint. To 
 Since there is no variation in `<url>` and `<version>` we will further on only focus on `<type>`, `<mode>` and
 `<resource_id>`.
 
-### Examples
+## Examples
 
 **Listing datasets**
 
@@ -53,11 +51,8 @@ Since there is no variation in `<url>` and `<version>` we will further on only f
 
 {{"    {}/grid/historical/apolis_long-v1-1d-100m/metadata".format(API_URL)}}
 
-## License
 
-All public data is published under {{LICENSE}}. No authentication is required.
-
-## Resources
+## Further information
 
 :{{"[Data Portal]({})".format(DATA_PORTAL_URL)}}:
     Graphical user interface.
