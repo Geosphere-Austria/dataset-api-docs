@@ -43,7 +43,7 @@ jobs:
         with:
           name: build
       - name: Build image
-        run: docker build --tag ${{ env.IMAGE_NAME }} .
+        run: printf "FROM httpd:2.4-alpine\nCOPY ./build/ /usr/local/apache2/htdocs/" | docker build -t ${{ env.IMAGE_NAME }} -f - .
       - name: Upload image
         run: |
           docker tag ${{ env.IMAGE_NAME }}  ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest
