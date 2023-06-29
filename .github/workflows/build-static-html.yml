@@ -20,5 +20,32 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:
-          name: api-doc-html
+          name: build
           path: build/
+  push_image:
+    runs-on: ubuntu-lastest
+    needs: build
+    env:
+      IMAGE_NAME: data-api-doc
+      HARBOR_PROJECT: data-api-documentation
+      # TAG : ${{ steps.meta.output.tags }}
+      TAG : 0.1
+    steps:
+      - uses: docker/login-action@v2
+        with:
+          registry: ${{ secrets.HARBOR_REGISTRY_URL }}
+          username: ${{ secrets.HARBOR_REGISTRY_USER }}
+          password: ${{ secrets.HARBOR_REGISTRY_PASSWORD }}
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags:
+            ${{ secrets.HARBOR_REGISTRY_URL }}/$HARBOR_PROJECT/$IMAGE_NAME:latest
+            ${{ secrets.HARBOR_REGISTRY_URL }}/$HARBOR_PROJECT/$IMAGE_NAME:$TAG
+
