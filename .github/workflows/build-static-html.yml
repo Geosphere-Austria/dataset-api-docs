@@ -40,12 +40,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-      - name: Build and push
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: |
-            ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT}}/${{ env.IMAGE_NAME }}:latest
-            ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT}}/${{ env.IMAGE_NAME }}:${{ env.TAG }}
+      - name: Build image
+        run: docker build --tag ${{ env.IMAGE_NAME }} .
+      - name: Upload image
+        run: |
+          docker tag ${{ env.IMAGE_NAME }}  ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest
+          docker tag ${{ env.IMAGE_NAME }}  ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:$TAG
+          docker push ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest
+          docker push ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:$TAG
 
