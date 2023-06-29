@@ -31,7 +31,8 @@ jobs:
       # TAG : ${{ steps.meta.output.tags }}
       TAG : 0.1
     steps:
-      - uses: docker/login-action@v2
+      - name: Docker login
+        uses: docker/login-action@v2
         with:
           registry: ${{ secrets.HARBOR_REGISTRY_URL }}
           username: ${{ secrets.HARBOR_REGISTRY_USER }}
@@ -40,6 +41,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+      - uses: actions/checkout@v3
       - name: Build image
         run: docker build --tag ${{ env.IMAGE_NAME }} .
       - name: Upload image
