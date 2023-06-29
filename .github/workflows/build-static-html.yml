@@ -46,6 +46,6 @@ jobs:
           context: .
           push: true
           tags:
-            ${{ secrets.HARBOR_REGISTRY_URL }}/$HARBOR_PROJECT/$IMAGE_NAME:latest
+            ${{ secrets.HARBOR_REGISTRY_URL }}/$HARBOR_PROJECT/$IMAGE_NAME:latest,
             ${{ secrets.HARBOR_REGISTRY_URL }}/$HARBOR_PROJECT/$IMAGE_NAME:$TAG
 
