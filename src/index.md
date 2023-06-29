@@ -26,8 +26,6 @@ reference/index
 authentication
 resource
 changelog
-
-de/index
 :::
 
 - {ref}`genindex`
