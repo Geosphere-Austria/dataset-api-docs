@@ -29,7 +29,7 @@ jobs:
       IMAGE_NAME: data-api-docs
       HARBOR_PROJECT: data-api-docs
       # TAG : ${{ steps.meta.output.tags }}
-      TAG : 0.1
+      TAG: 0.1
     steps:
       - uses: actions/checkout@v3
       - name: Set up Docker Buildx
