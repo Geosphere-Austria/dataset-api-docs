@@ -51,4 +51,4 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: '${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:$ {{ env.TAG }}'
+          tags: '${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}'
