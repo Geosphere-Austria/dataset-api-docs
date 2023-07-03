@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     env:
-      IMAGE_NAME: data-api-docs
-      HARBOR_PROJECT: data-api-docs
+      IMAGE_NAME: dataset-api-docs
+      HARBOR_PROJECT: dataset-api-docs
       # TAG : ${{ steps.meta.output.tags }}
       TAG: 0.1
     steps:
