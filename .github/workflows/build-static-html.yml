@@ -44,11 +44,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
+          path: ./build
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: ./
           file: ./Dockerfile
-          builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: '${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:latest , ${{ secrets.HARBOR_REGISTRY_URL }}/${{ env.HARBOR_PROJECT }}/${{ env.IMAGE_NAME }}:${{ env.TAG }}'
