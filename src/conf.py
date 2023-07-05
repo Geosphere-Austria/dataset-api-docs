@@ -23,7 +23,7 @@ copyright = "2023, Geosphere Austria"
 author = "Geosphere Austria"
 
 # The full version, including alpha/beta/rc tags
-release = "2.0"
+release = "v1"
 
 
 # -- General configuration ---------------------------------------------------
