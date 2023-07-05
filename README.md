@@ -14,21 +14,15 @@ documentation is build into the [build/](build/) folder. Use the following steps
 
 Create a python environment
 
-    python -m venv .venv
-
-Activate the environment
-
-    . .venv/bin/activate
-
-Install the requirements
-
-    pip install -r requirements.txt
+    make python-venv
 
 Build the docs
 
-    sphinx-build -b html src/ build/
+    make api-docs
 
 If you want to start a server which builds and reloads the docs automatically upon 
 changes in the source files run
 
-    sphinx-autobuild -b html --host 0.0.0.0 src/ build
+    make auto-reload-server
+
+The documentation will be available at http://localhost:8000
