@@ -1,6 +1,8 @@
 name: Build API Documentation
 run-name: Build the static html files for API documenation.
-on: [push]
+on:
+  release:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,8 +30,7 @@ jobs:
     env:
       IMAGE_NAME: dataset-api-docs
       HARBOR_PROJECT: dataset-api-docs
-      # TAG : ${{ steps.meta.output.tags }}
-      TAG: 0.3
+      TAG: ${{ github.event.release.tag_name }}
     steps:
       - uses: actions/checkout@v3
       - name: Set up Docker Buildx
