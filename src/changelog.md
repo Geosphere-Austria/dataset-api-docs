@@ -1,6 +1,25 @@
 (changelog)=
 # Changelog
 
+## Upcoming
+
+### Release of https://dataset.api.hub.geosphere.at
+
+The API will move to the new host address [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at). 
+To ensure a smooth transition the [current API](https://dataset.api.hub.zamg.ac.at) will still
+be hosted for some time before [https://dataset.api.hub.zamg.ac.at](https://dataset.api.hub.zamg.ac.at)
+will redirected to [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at).
+
+We recommend to allow for following redirects and use the new host address
+[https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at) as soon it is released.
+The release will be announced in the Changelog and on [GitHub](https://github.com/Geosphere-Austria/dataset-api-docs).
+
+New features will only be released to [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at).
+
+```{note}
+Only the host address changes. The requests stay the same.
+```
+
 ## 2022-12-14
 
 * __Breaking__
