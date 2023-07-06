@@ -20,6 +20,17 @@ New features will only be released to [https://dataset.api.hub.geosphere.at](htt
 Only the host address changes. The requests stay the same.
 ```
 
+## 2023-06-27
+
+* __Features__
+  * Adding `snowgrid_cl-v2-1d-1km` dataset
+  * Adding `spartacus-v2-1d-1km` dataset
+  * Adding `spartacus-v2-1m-1km` dataset
+  * Adding `spartacus-v2-1q-1km` dataset
+  * Adding `spartacus-v2-1y-1km` dataset
+  * Adding `winfore-v2-1d-1km` dataset
+
+
 ## 2022-12-14
 
 * __Breaking__
