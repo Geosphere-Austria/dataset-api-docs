@@ -17,7 +17,7 @@ The release will be announced in the Changelog and on [GitHub](https://github.co
 New features will only be released to [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at).
 
 ```{note}
-Only the host address changes. The requests stay the same.
+Only the host address changes. Otherwise the requests stay the same.
 ```
 
 ## 2023-06-27

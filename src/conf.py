@@ -55,7 +55,8 @@ exclude_patterns = []
 # a list of builtin themes.
 # use read-the-docs theme
 html_theme = "sphinx_rtd_theme"
-
+html_favicon = "_static/images/icon.svg"
+html_logo = "_static/images/logo_descr.svg"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -82,7 +83,8 @@ myst_substitutions = {
     "FILE_LIMIT": 10000000,
     "BASE_URL": BASE_URL,
     "API_URL": BASE_URL + "/v1",
-    "API_DOCS_URL": BASE_URL + "/v1/openapi-docs",
+    "API_DATASETS": BASE_URL + "/v1/datasets",
+    "API_OPENAPI_DOCS": BASE_URL + "/v1/openapi-docs",
     "API_USER_DOCS_URL": BASE_URL + "/v1/docs",
     "DATA_PORTAL_URL": "https://data.hub.zamg.ac.at",
     "LICENSE": "[Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)",

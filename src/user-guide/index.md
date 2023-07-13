@@ -1,4 +1,5 @@
-# Reference
+(user_guide)=
+# User Guide
 
 :::{toctree}
 :maxdepth: 2
@@ -9,4 +10,6 @@ type
 mode
 resource
 request_size_limit
+authentication
+license
 :::

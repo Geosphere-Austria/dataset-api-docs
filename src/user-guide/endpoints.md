@@ -26,10 +26,10 @@ where
     is `v1`
 
 :`<type>`: 
-    is either `grid`, `timeseries` or `station`, (see {ref}`types`)
+    is either `grid`, `timeseries` or `station`, see {ref}`types`
 
 :`<mode>`:
-    is either `historical`, `current` or `forecast`, (see {ref}`modes`)
+    is either `historical` or `current`, see {ref}`modes`
 
 :`<resource_id>`:
     is one of the the resources listed in {ref}`resources`.
@@ -50,5 +50,7 @@ Some API parameters are mode and type specific.
 
 ## Metadata
 
-You can query and endpoints metadata by appending `/metadata` to the endpoint.
+All endpoints have __metadata__ which can be requested by appending `/metadata` to the endpoint.
+
+Metadata contain also helpful information about the request parameters like the range of allowed values.
 
