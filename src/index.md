@@ -1,6 +1,12 @@
 (index)=
 # Dataset API Documentation
 
+```{attention}
+## Got redirected?
+Requests to `https://dataset.api.hub.zamg.ac.at/v1/docs` redirect here.
+Please read the information about changes in regards to this new URL in the [Changelog](changelog-20230718-geosphere).
+```
+
 This is the documentation for the API that provides access to several datasets of GeoSphere Austria.
 
 :::{toctree}
@@ -15,10 +21,10 @@ changelog
 
 ## Feedback
 
-Having issues with the API or want to request new features? Please open a new issue on
-[Github](https://github.com/Geosphere-Austria/api-docs).
+If you are having issues with the API or if you have suggestions, please open a new issue on
+[Github](https://github.com/Geosphere-Austria/dataset-api-docs).
 
-If your request better fits in an e-mail, please contact datahub.feedback@geosphere.at
+If your request better fits in an e-mail, please contact **datahub.feedback@geosphere.at**
 
 ## License
 
@@ -28,7 +34,7 @@ All data that is publicly accessible without authentication is licensed under un
 
 See {ref}`changelog` for changes to both the API itself and the datasets provided. 
 If you have an application that uses this API, please watch 
-[https://github.com/Geosphere-Austria/api-docs](https://github.com/Geosphere-Austria/api-docs),
+[https://github.com/Geosphere-Austria/dataset-api-docs](https://github.com/Geosphere-Austria/dataset-api-docs),
 where we try to be proactive about upcoming changes.
 
 % - {ref}`genindex`

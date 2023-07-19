@@ -1,4 +1,4 @@
-# api-docs
+# dataset-api-docs
 
 > :exclamation: The Geosphere Austria data API has moved to https://dataset.api.hub.geosphere.at.
 > The API at https://dataset.api.hub.zamg.ac.at is still available but will receive maintenance updates
@@ -8,14 +8,22 @@
 This is the [documentation](https://dataset.api.hub.geosphere.at/v1/docs) for the 
 [data-api](https://dataset.api.hub.geosphere.at/v1) provided by [Geosphere Austria](https://geosphere.at).
 
+
+## Feedback
+
+If you are having issues with the API or if you have suggestions, please open a new issue.
+
+If your request better fits in an e-mail, please contact **datahub.feedback@geosphere.at**
+
+
+## Build
+
 The documentation is written in [Sphinx](https://www.sphinx-doc.org/en/master/) together
 with [MyST Markdown](https://www.sphinx-doc.org/en/master/usage/markdown.html) as a 
 markup language.
 
 The source code for the documentation is located in the [src/](src/) folder. The 
 documentation build will be located in the `build/` folder.
-
-## Usage
 
 Create a python environment
 

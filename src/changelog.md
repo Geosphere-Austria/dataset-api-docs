@@ -5,18 +5,18 @@
 
 ### Redirecting {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
-The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is public, see {ref}`changelog-20230718-geosphere` for further
+The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now live, see {ref}`changelog-20230718-geosphere` for further
 details.
 
 To ensure a smooth transition the API at {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} is still available but
-deprecated and will be redirected to {{"[the new API]({})".format(BASE_URL)}} in the future.
+deprecated and will be redirected to {{"[the new URL]({})".format(BASE_URL)}} in the future.
 
 ```{attention}
-The redirect is planned for the end of September.
+The redirect is planned for September 2023. Check this changelog or the [Github Repository](https://github.com/Geosphere-Austria/dataset-api-docs) for updates.
 ```
 
 ```{note}
-We recommend to use the new API {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
+We recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
 ```
 
 (changelog-20230718)=
@@ -25,13 +25,14 @@ We recommend to use the new API {{"[{}]({})".format(BASE_URL, BASE_URL)}} from n
 (changelog-20230718-geosphere)=
 ### Release of {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
-The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now public.
+The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now live. This means:
 
-New features will only be released to {{"[{}]({})".format(BASE_URL, BASE_URL)}}. The API at
+* New features will only be released to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+* the API under the URL
 {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} is deprecated and will only receive maintenance releases before 
-the address is redirected to {{"[{}]({})".format(BASE_URL, BASE_URL)}} approximately in the end of September.
+the address is redirected to {{"[{}]({})".format(BASE_URL, BASE_URL)}} approximately in September.
 
-We recommend to use the new API {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
+**We therefore strongly recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} for new applications and update existing ones**.
 Your requests should not require any further changes since the endpoints are otherwise the same.
 
 ### Updated dataset API documentation
