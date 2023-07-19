@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 import sphinx_rtd_theme  # import needed even though it is not called explicitly  # noqa: F401
 
-project = "dataset-api"
+project = "Dataset API Documentation"
 copyright = "2023, Geosphere Austria"
 author = "Geosphere Austria"
 
@@ -56,12 +56,15 @@ exclude_patterns = []
 # use read-the-docs theme
 html_theme = "sphinx_rtd_theme"
 html_favicon = "_static/images/icon.svg"
-html_logo = "_static/images/logo_descr.svg"
+html_logo = "_static/images/logo_negative_lime.svg"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+html_css_files = [
+    'css/custom.css',
+]
 
 myst_enable_extensions = [
     "amsmath",
@@ -77,7 +80,7 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
-BASE_URL = "https://dataset.api.hub.zamg.ac.at"
+BASE_URL = "https://dataset.api.hub.geosphere.at"
 myst_substitutions = {
     "JSON_LIMIT": 1000000,
     "FILE_LIMIT": 10000000,
@@ -88,4 +91,5 @@ myst_substitutions = {
     "API_USER_DOCS_URL": BASE_URL + "/v1/docs",
     "DATA_PORTAL_URL": "https://data.hub.zamg.ac.at",
     "LICENSE": "[Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)",
+    "LEGACY_BASE_URL": "https://dataset.api.hub.zamg.ac.at",
 }
