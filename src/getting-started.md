@@ -9,7 +9,7 @@ An API endpoint typically consists of:
 
 where 
 :`<url>`:
-    is {{BASE_URL}}
+    is {{"`{}`".format(BASE_URL)}}
 
 :`<verion>`:
     is `v1`
@@ -24,17 +24,16 @@ where
     is one of the the resources listed in {ref}`resources`.
 
 :::{note}
-Not for every permutation of type, mode and resource_id exists and endpoint. To see a list all endpoints visit the 
-{{"[datasets]({})".format(API_DATASETS)}} endpoint.
+Not for every permutation of type, mode and resource_id exists and endpoint.
 :::
 
 All datasets can be listed via {{"[{}]({})".format(API_DATASETS, API_DATASETS)}}.
 
 Furthermore all endpoints metadata can be requested by appending `/metadata`.
 
-## Examples
+## Example
 
-In this example we want to get the current air temperature from the tawes station "Hohe Warte".
+In this example we want to get the current air temperature from the TAWES station "Hohe Warte".
 
 From {{"[{}]({})".format(API_DATASETS, API_DATASETS)}} we know the endpoint 
 

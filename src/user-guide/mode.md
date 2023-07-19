@@ -3,7 +3,7 @@
 
 ## historical
 
-Historical data. This can historical measurements from a weather station or model data for some point in the past.
+Historical data. This can be past measurements from a weather station or model data for some point in the past.
 
 ## current
 
