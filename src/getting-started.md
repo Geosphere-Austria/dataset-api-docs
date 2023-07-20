@@ -33,7 +33,7 @@ Furthermore, all endpoints metadata can be requested by appending `/metadata`.
 
 ## Example
 
-In this example we want to get the current air temperature from the TAWES station `Hohe Warte.
+In this example we want to get the current air temperature from the TAWES station `WIEN/HOHE WARTE`.
 
 From {{"[{}]({})".format(API_DATASETS, API_DATASETS)}} we know the endpoint 
 
@@ -44,7 +44,7 @@ The endpoint requires request parameters `parameters` and `station_ids`. From th
 
 {{"    {}/station/current/tawes-v1-10min/metadata".format(API_URL)}}
 
-we find the parameter name `TL` for air temperature and station_id `11035` for Hohe Warte. This results in:
+we find the parameter name `TL` for air temperature and station_id `11035` for `WIEN/HOHE WARTE`. This results in:
 
 {{"    {}/station/current/tawes-v1-10min?parameters=TL&station_ids=11035".format(API_URL)}}
 
