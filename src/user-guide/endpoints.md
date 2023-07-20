@@ -2,7 +2,7 @@
 # Endpoints
 
 :::{tip}
-If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}.
 :::
 
 ## Listing Datasets

@@ -1,6 +1,10 @@
 (types)=
 # Types
 
+:::{tip}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}.
+:::
+
 Generally there are two types of data: **geospatial raster** and **station** data. 
 
 ## grid
@@ -38,7 +42,3 @@ station_ids
     The weather station id.
 :::
 
-
-:::{tip}
-If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}.
-:::

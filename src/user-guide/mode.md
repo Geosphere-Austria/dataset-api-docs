@@ -27,7 +27,3 @@ end
     The end date and time, supplied in `YYYY-MM-DDThh:mm` format (the time is optional).
 
 :::
-
-:::{tip}
-If you prefer to use Swagger to understand the API capabilities, see {ref}`openapi`.
-:::
