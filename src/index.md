@@ -21,7 +21,7 @@ changelog
 
 ## Feedback
 
-If you are having issues with the API or if you have suggestions, please open a new issue on
+If you are facing issues with the API or if you have suggestions, please open a new issue on
 [Github](https://github.com/Geosphere-Austria/dataset-api-docs).
 
 If your request better fits in an e-mail, please contact **datahub.feedback@geosphere.at**

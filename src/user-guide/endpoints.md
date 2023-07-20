@@ -1,6 +1,10 @@
 (endpoints)=
 # Endpoints
 
+:::{tip}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}
+:::
+
 ## Listing Datasets
 
 All available dataset endpoints are listed in {{"[{}]({})".format(API_DATASETS, API_DATASETS)}}.
@@ -33,7 +37,7 @@ where
     is either `historical` or `current`, see {ref}`modes`
 
 :`<resource_id>`:
-    is one of the the resources listed in {ref}`resources`.
+    is one of the resources listed in {ref}`resources`.
 
 :::{note}
 The host {{"`{}`".format(LEGACY_BASE_URL)}} is deprecated.

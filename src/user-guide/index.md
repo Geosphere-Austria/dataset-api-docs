@@ -9,6 +9,7 @@ endpoints
 type
 mode
 resource
+openapi
 request_size_limit
 authentication
 license
