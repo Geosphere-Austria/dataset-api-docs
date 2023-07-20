@@ -1,7 +1,11 @@
 (types)=
 # Types
 
-Generally there are two types of data: *Geospatial rasters* and *station* data. 
+:::{tip}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}.
+:::
+
+Generally there are two types of data: **geospatial raster** and **station** data. 
 
 ## grid
 
@@ -9,7 +13,7 @@ Raster data requested by supplying a bounding box.
 
 ## timeseries
 
-A spezial type of raster data. Instead of a supplying a bounding box an [EPSG:4325](https://epsg.io/4326) coordinate
+A special type of raster data. Instead of a supplying a bounding box an [EPSG:4325](https://epsg.io/4326) coordinate
 pair is supplied. The nearest neighboring grid point from raster data is returned.
 
 ## station
@@ -37,3 +41,4 @@ station_ids
 
     The weather station id.
 :::
+

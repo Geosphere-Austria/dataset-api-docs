@@ -1,4 +1,4 @@
 (authentication)=
 # Authentication
 
-Currently, no authentication is needed to access data via the API.
+Currently, no authentication is required to access data via the API.

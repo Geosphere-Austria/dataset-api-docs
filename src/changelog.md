@@ -3,22 +3,42 @@
 
 ## Upcoming
 
-### Release of https://dataset.api.hub.geosphere.at
+### Redirecting {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
-The API will move to the new host address [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at). 
-To ensure a smooth transition the [current API](https://dataset.api.hub.zamg.ac.at) will still
-be hosted for some time before [https://dataset.api.hub.zamg.ac.at](https://dataset.api.hub.zamg.ac.at)
-will redirected to [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at).
+The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now live, see {ref}`changelog-20230718-geosphere` for further
+details.
 
-We recommend to allow for following redirects and use the new host address
-[https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at) as soon it is released.
-The release will be announced in the Changelog and on [GitHub](https://github.com/Geosphere-Austria/dataset-api-docs).
+To ensure a smooth transition the API at {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} is still available but
+deprecated and will be redirected to {{"[the new URL]({})".format(BASE_URL)}} in the future.
 
-New features will only be released to [https://dataset.api.hub.geosphere.at](https://dataset.api.hub.geosphere.at).
+```{attention}
+The redirect is planned for September 2023. Check this changelog or the [Github Repository](https://github.com/Geosphere-Austria/dataset-api-docs) for updates.
+```
 
 ```{note}
-Only the host address changes. Otherwise the requests stay the same.
+We recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
 ```
+
+(changelog-20230718)=
+## 2023-07-18
+
+(changelog-20230718-geosphere)=
+### Release of {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+
+The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now live. This means:
+
+* New features will only be released to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+* the API under the URL
+{{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} is deprecated and will only receive maintenance releases before 
+the address is redirected to {{"[{}]({})".format(BASE_URL, BASE_URL)}} approximately in September.
+
+**We therefore strongly recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} for new applications and update existing ones**.
+Your requests should not require any further changes since the endpoints are otherwise the same.
+
+### Updated dataset API documentation
+
+The user documentation has been overhauled. The source code for the documentation is available at
+[https://github.com/Geosphere-Austria/dataset-api-docs](https://github.com/Geosphere-Austria/dataset-api-docs).
 
 ## 2023-06-27
 
@@ -29,7 +49,6 @@ Only the host address changes. Otherwise the requests stay the same.
   * Adding `spartacus-v2-1q-1km` dataset
   * Adding `spartacus-v2-1y-1km` dataset
   * Adding `winfore-v2-1d-1km` dataset
-
 
 ## 2022-12-14
 
@@ -56,7 +75,6 @@ Only the host address changes. Otherwise the requests stay the same.
       having any data for this time period.
     * Updated outdated station metadata.
     * Fixed no timezone in CSV files.
-
 
 ## 2022-03-03
 

@@ -1,12 +1,17 @@
 (endpoints)=
 # Endpoints
 
-## Endpoint structure.
+:::{tip}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}.
+:::
 
-% TODO: this is duplicate of overview. Keep it?
+## Listing Datasets
 
-An API endpoint (with the exception of the {{"[datasets]({}/datasets)".format(API_URL)}} endpoint) consists of five
-parts:
+All available dataset endpoints are listed in {{"[{}]({})".format(API_DATASETS, API_DATASETS)}}.
+
+## Dataset Endpoint Structure.
+
+An dataset endpoint consists of five parts:
 
 - a host
 - a version
@@ -19,8 +24,8 @@ and are put together like this
     <host>/<version>/<type>/<mode>/<resource_id>
 
 where 
-:`<url>`:
-    is {{BASE_URL}}
+:`<host>`:
+    is {{"`{}`".format(BASE_URL)}}
 
 :`<verion>`:
     is `v1`
@@ -32,25 +37,25 @@ where
     is either `historical` or `current`, see {ref}`modes`
 
 :`<resource_id>`:
-    is one of the the resources listed in {ref}`resources`.
+    is one of the resources listed in {ref}`resources`.
 
 :::{note}
+The host {{"`{}`".format(LEGACY_BASE_URL)}} is deprecated.
+:::
+
+:::{tip}
 The resource determines the available types and mode.
 :::
 
-For example weather stations will always have *station* type.
+For example weather stations will always have the *station* type.
 
 :::{tip}
-To see a list all endpoints visit the {{"[datasets]({}/datasets)".format(API_URL)}} endpoint.
-:::
-
-:::{note}
 Some API parameters are mode and type specific.
 :::
 
 ## Metadata
 
-All endpoints have __metadata__ which can be requested by appending `/metadata` to the endpoint.
+All dataset endpoints have __metadata__ which can be requested by appending `/metadata` to the dataset endpoint.
 
-Metadata contain also helpful information about the request parameters like the range of allowed values.
+Metadata contain amongst other helpful information about the request parameters like the range of allowed values.
 

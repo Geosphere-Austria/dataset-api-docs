@@ -9,9 +9,9 @@ An API endpoint typically consists of:
 
 where 
 :`<url>`:
-    is {{BASE_URL}}
+    is {{"`{}`".format(BASE_URL)}}
 
-:`<verion>`:
+:`<version>`:
     is `v1`
 
 :`<type>`: 
@@ -21,33 +21,36 @@ where
     is either `historical` or `current`, see {ref}`modes`
 
 :`<resource_id>`:
-    is one of the the resources listed in {ref}`resources`.
+    is one of the resources listed in {ref}`resources`.
 
 :::{note}
-Not for every permutation of type, mode and resource_id exists and endpoint. To see a list all endpoints visit the 
-{{"[datasets]({})".format(API_DATASETS)}} endpoint.
+Not for every permutation of type, mode and resource_id exists and endpoint.
 :::
 
 All datasets can be listed via {{"[{}]({})".format(API_DATASETS, API_DATASETS)}}.
 
-Furthermore all endpoints metadata can be requested by appending `/metadata`.
+Furthermore, all endpoints metadata can be requested by appending `/metadata`.
 
-## Examples
+## Example
 
-In this example we want to get the current air temperature from the tawes station "Hohe Warte".
+In this example we want to get the current air temperature from the TAWES station `WIEN/HOHE WARTE`.
 
 From {{"[{}]({})".format(API_DATASETS, API_DATASETS)}} we know the endpoint 
 
 {{"    {}/station/current/tawes-v1-10min".format(API_URL)}}
 
-will provide the the data.
+will provide the data.
 The endpoint requires request parameters `parameters` and `station_ids`. From the metadata 
 
 {{"    {}/station/current/tawes-v1-10min/metadata".format(API_URL)}}
 
-we find the parameter name `TL` for air temperature and station_id `11035` for Hohe Warte. This results in:
+we find the parameter name `TL` for air temperature and station_id `11035` for `WIEN/HOHE WARTE`. This results in:
 
 {{"    {}/station/current/tawes-v1-10min?parameters=TL&station_ids=11035".format(API_URL)}}
+
+:::{tip}
+If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}
+:::
 
 ## Further information
 
@@ -60,5 +63,5 @@ we find the parameter name `TL` for air temperature and station_id `11035` for H
 :{{"[List all endpoints]({})".format(API_DATASETS)}}:
     API endpoint listing all available dataset endpoints. 
 
-:{{"[FastAPI docs]({})".format(API_OPENAPI_DOCS)}}:
+:{{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}:
     API endpoint documentation.
