@@ -19,6 +19,11 @@ The redirect is planned for September 2023. Check this changelog or the [Github 
 We recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
 ```
 
+(changelog-20230907)=
+## 2023-09-07
+
+* Fixing timeout error when requesting large geojson datasets. [#12](https://github.com/Geosphere-Austria/dataset-api-docs/issues/12)
+
 (changelog-20230718)=
 ## 2023-07-18
 
