@@ -1,22 +1,19 @@
 (changelog)=
 # Changelog
 
-## Upcoming
 
-### Redirecting {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+(changelog-20230918)=
+## 2023-09-18
 
-The API at {{"[{}]({})".format(BASE_URL, BASE_URL)}} is now live, see {ref}`changelog-20230718-geosphere` for further
-details.
+## Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
-To ensure a smooth transition the API at {{"[{}]({})".format(LEGACY_BASE_URL, LEGACY_BASE_URL)}} is still available but
-deprecated and will be redirected to {{"[the new URL]({})".format(BASE_URL)}} in the future.
+Requests to {{"`{}`".format(LEGACY_BASE_URL)}} are now fowarded to {{"`{}`".format(BASE_URL)}} with a HTTP 301 redirect.
+Make sure to update your code, to point to the new domain.
+Check this changelog or the [Github Repository](https://github.com/Geosphere-Austria/dataset-api-docs) for updates regarding end-of-life
+of this redirect.
 
 ```{attention}
-The redirect is planned for September 2023. Check this changelog or the [Github Repository](https://github.com/Geosphere-Austria/dataset-api-docs) for updates.
-```
-
-```{note}
-We recommend to use the new URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} from now on.
+Use the URL {{"[{}]({})".format(BASE_URL, BASE_URL)}} for all API calls in new and existing projects.
 ```
 
 (changelog-20230907)=
