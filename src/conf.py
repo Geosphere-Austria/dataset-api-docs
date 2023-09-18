@@ -89,7 +89,7 @@ myst_substitutions = {
     "API_DATASETS": BASE_URL + "/v1/datasets",
     "API_OPENAPI_DOCS": BASE_URL + "/v1/openapi-docs",
     "API_USER_DOCS_URL": BASE_URL + "/v1/docs",
-    "DATA_PORTAL_URL": "https://data.hub.zamg.ac.at",
+    "DATA_PORTAL_URL": "https://data.hub.geosphere.at",
     "LICENSE": "[Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)",
     "LEGACY_BASE_URL": "https://dataset.api.hub.zamg.ac.at",
 }
