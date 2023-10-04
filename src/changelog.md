@@ -2,6 +2,17 @@
 # Changelog
 
 
+(changelog-TBD)=
+## 2023-10-??
+* Released an initial version of forecast endpoints and the AROME dataset (`arome_fcst-v1-1h-2500m`).
+
+```{note}
+Forecasts are available in `prerelease` stability. This feature is still 
+under active development and subject to non-backwards compatible changes.
+Make sure you follow updates on the changelog and give us feedback on the endpoints on [https://github.com/Geosphere-Austria/dataset-api-docs](https://github.com/Geosphere-Austria/dataset-api-docs)  
+```
+
+
 (changelog-20230918)=
 ## 2023-09-18
 

@@ -6,7 +6,19 @@ The following list provides information about available data. A similar output c
 The attribute `verified: yes` indicates, that data is checked with the Austrian Quality Service (AQUAS). 
 You can read more about data verification [here](https://www.zamg.ac.at/cms/de/klima/messnetze/datenpruefung).
 
-
+## AROME Forecast
+:resource_id:
+    arome_fcst-v1-1h-2500m
+:verified:
+    yes
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/arome_fcst-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
 
 ## APOLIS short daily
 :resource_id:
