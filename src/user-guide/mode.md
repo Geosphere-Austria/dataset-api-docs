@@ -25,7 +25,8 @@ Forecast data. This is the output of one or multiple models for some point in th
 
 Forecasts have several additional metadata attributes (available via the `/metadata` endpoint of the respective data source):
 * `available_forecast_reftimes` holds all available forecast reference times. The _forecast reference time_ describes when the data was created, i.e. the forecast model was run.
-* `last_forecast_reftime` holds the timestamp of the newest available forecast.
+* `last_forecast_reftime` holds the newest available forecast reference time.
+* `max_forecast_offset` is the maximum allowed value for the `forecast_offset` parameter.
 * `forecast_length` describes how many time steps a single forecast has.
 
 ```{note}
@@ -44,17 +45,23 @@ start
 
     The start date and time, supplied in `YYYY-MM-DDThh:mm` format (the time is optional).
 
+    In case of forecasts `start` is optional and defaults to the last forecast timestamp before now.
+
 end
     if `mode` is _historical_ or _forecast_
 
     The end date and time, supplied in `YYYY-MM-DDThh:mm` format (the time is optional).
 
+    In case of forecasts `end` is optional and defaults to the end of the forecast.
 
-offset
+
+forecast_offset
     if `mode` is _forecast_
 
-    An optional `offset` allows you to select an older forecast. `offset` counts backwards, so `0` is the most recent forecast, `1` the second most recent and so on.
+    An optional _offset_ allowing you to select an older forecast. `forecast_offset` counts backwards, so `0` is the most recent forecast, `1` the second most recent and so on.
     You can check the `available_forecast_reftimes` metadata attribute, and the offset will correspond to the index of the list.
+
+    The default value is `0`, i.e. the most recently produced forecast is requested, and must be between `0` and `max_forecast_offset`.
 :::
 
 

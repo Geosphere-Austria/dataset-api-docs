@@ -18,7 +18,7 @@ where
     is either `grid`, `timeseries` or `station`, see {ref}`types`
 
 :`<mode>`:
-    is either `historical` or `current`, see {ref}`modes`
+    is either `historical`, `current` or `forecast`, see {ref}`modes`
 
 :`<resource_id>`:
     is one of the resources listed in {ref}`resources`.

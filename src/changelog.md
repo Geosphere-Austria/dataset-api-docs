@@ -16,7 +16,7 @@ Make sure you follow updates on the changelog and give us feedback on the endpoi
 (changelog-20230918)=
 ## 2023-09-18
 
-## Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+### Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
 Requests to {{"`{}`".format(LEGACY_BASE_URL)}} are now fowarded to {{"`{}`".format(BASE_URL)}} with a HTTP 301 redirect.
 Make sure to update your code, to point to the new domain.
