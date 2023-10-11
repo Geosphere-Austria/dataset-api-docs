@@ -30,7 +30,7 @@ Forecasts have several additional metadata attributes (available via the `/metad
 * `forecast_length` describes how many time steps a single forecast has.
 
 ```{note}
-Currently, the available forecast duration is always `forecast_length * freq` for easier use.
+Currently, the available forecast duration (timerange covered by a forecast) is always `forecast_length * freq` for easier use.
 In the future, this may change, so this simple formula does not necessarily hold. For example a dataset
 might have `1H` timesteps for the next 6 hours, `3H` steps for the following 18 hours, and even lower resolutions after that.
 When available, this information will be displayed as part of the metadata of a dataset.
