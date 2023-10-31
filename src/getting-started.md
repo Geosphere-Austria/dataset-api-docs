@@ -24,7 +24,7 @@ where
     is one of the resources listed in {ref}`resources`.
 
 :::{note}
-Not for every permutation of type, mode and resource_id exists and endpoint.
+Not for every permutation of type, mode and resource_id exists an endpoint.
 :::
 
 All datasets can be listed via {{"[{}]({})".format(API_DATASETS, API_DATASETS)}}.
