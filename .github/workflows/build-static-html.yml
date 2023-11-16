@@ -18,7 +18,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Build sphinx html output
-        run: sphinx-build -b html src/ build/v1/docs/
+        run: sphinx-build -b html src/ build/
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
         with:

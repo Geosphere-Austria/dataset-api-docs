@@ -1,5 +1,6 @@
 PYTHON=python3
 VENV=.venv
+CONTAINERNAME=dataset-api-docs
 
 .DEFAULT_GOAL:=help
 
@@ -9,8 +10,8 @@ python-venv:  ## Create python venv and install requirements
 	. ${VENV}/bin/activate; \
 	pip install -r requirements.txt
 
-.PHONY: api-docs
-api-docs:  ## Build api documentation
+.PHONY: build
+build:  ## Build api documentation
 	. ${VENV}/bin/activate; \
 	sphinx-build -b html src/ build/
 
@@ -18,6 +19,14 @@ api-docs:  ## Build api documentation
 auto-reload-server:  ## Start sphinx autobild server
 	. ${VENV}/bin/activate; \
 	sphinx-autobuild -b html --host localhost src/ build
+
+.PHONY: container-image
+container-image: build  ## Build a docker image with the docs.
+	docker build . -t ${CONTAINERNAME}
+
+.PHONY: run-container
+run-container: container-image  ## Run a container with the docs.
+	docker run -p 8000:80 ${CONTAINERNAME}
 
 .PHONY: clean
 clean:  ## Remove the build files
