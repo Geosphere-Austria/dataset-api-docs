@@ -6,8 +6,6 @@ The following list provides information about available data. A similar output c
 The attribute `verified: yes` indicates, that data is checked with the Austrian Quality Service (AQUAS). 
 You can read more about data verification [here](https://www.zamg.ac.at/cms/de/klima/messnetze/datenpruefung).
 
-
-
 ## APOLIS short daily
 :resource_id:
     apolis_short-v1-1d-100m
@@ -27,13 +25,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     inca-v1-1h-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/inca-v1-1h-1km)".format(DATA_PORTAL_URL)}}
 
 ## HISTALP yearly (Austria only)
@@ -41,27 +39,55 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     histalp-v1-1y
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/histalp)".format(DATA_PORTAL_URL)}}
+
+## Nowcasting (System)
+:resource_id:
+    nowcast-v1-15min-1km
+:verified:
+    no
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/nowcast-v1-15min-1km)".format(DATA_PORTAL_URL)}}
+
+## Numerical Weather Prediction
+:resource_id:
+    nwp-v1-1h-2500m
+:verified:
+    no
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/nwp-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
 
 ## Snowgrid CL v2
 :resource_id:
     snowgrid_cl-v2-1d-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/snowgrid_cl-v2-1d-1km)".format(DATA_PORTAL_URL)}}
 
 ## Spartacus v1 daily (legacy) 
@@ -69,13 +95,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v1-1d-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v1-1d-1km)".format(DATA_PORTAL_URL)}}
 
 ## Spartacus v1 monthly (legacy)
@@ -83,13 +109,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v1-1m-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v1-1m-1km)".format(DATA_PORTAL_URL)}}
 
 ## Spartacus v2 daily
@@ -97,13 +123,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v2-1d-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v2-1d-1km)".format(DATA_PORTAL_URL)}}
 
 ## Spartacus v2 monthly
@@ -111,13 +137,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v2-1m-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v2-1m-1km)".format(DATA_PORTAL_URL)}}
 
 ## Spartacus v2 seasonal
@@ -125,13 +151,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v2-1q-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v2-1q-1km)".format(DATA_PORTAL_URL)}}
 
 
@@ -140,13 +166,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     spartacus-v2-1y-1km
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/spartacus-v2-1y-1km)".format(DATA_PORTAL_URL)}}
 
 ## Synop weather station
@@ -154,13 +180,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     synop-v1-1h
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/synop-v1-1h)".format(DATA_PORTAL_URL)}}
 
 ## TAWES weather station
@@ -168,13 +194,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     tawes-v1-10min
 :verified:
     no. Raw observation values.
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical, current
-:Data portal link:
+:data portal link:
     None (API only)
 
 ## Weather station 10 minutes
@@ -182,13 +208,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     klima-v1-10min
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}
 
 ## Weather station hourly
@@ -196,13 +222,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     klima-v1-1h
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}
 
 ## Weather station daily
@@ -210,13 +236,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     klima-v1-1d
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}
 
 ## Weather station monthly
@@ -224,13 +250,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     klima-v1-1m
 :verified:
     yes
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     station
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}
 
 ## WINFORE v1 (legacy)
@@ -239,13 +265,13 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     winfore-v1-1d-1km
 :verified:
     no
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/winfore-v1-1d-1km)".format(DATA_PORTAL_URL)}}
 
 ## WINFORE v2
@@ -254,11 +280,11 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     winfore-v2-1d-1km
 :verified:
     no
-:Licence:
+:licence:
     {{LICENSE}}
 :types:
     grid, timeseries
 :modes:
     historical
-:Data portal link:
+:data portal link:
     {{"[link]({}/dataset/winfore-v2-1d-1km)".format(DATA_PORTAL_URL)}}

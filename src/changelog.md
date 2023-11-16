@@ -2,10 +2,23 @@
 # Changelog
 
 
+(changelog-20231116)=
+## 2023-11-16
+* Released an initial version of forecast endpoints
+* Forecasts: Added nowcasting dataset `nowcast-v1-15min-1km`.
+* Forecasts: Added numerical weather prediction dataset `nwp-v1-1h-2500m`.
+
+```{note}
+Forecasts are available in `prerelease` stability. This feature is still 
+under active development and subject to non-backwards compatible changes.
+Make sure you follow updates on the changelog and give us feedback on the endpoints on [https://github.com/Geosphere-Austria/dataset-api-docs](https://github.com/Geosphere-Austria/dataset-api-docs)  
+```
+
+
 (changelog-20230918)=
 ## 2023-09-18
 
-## Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
+### Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
 Requests to {{"`{}`".format(LEGACY_BASE_URL)}} are now fowarded to {{"`{}`".format(BASE_URL)}} with a HTTP 301 redirect.
 Make sure to update your code, to point to the new domain.
