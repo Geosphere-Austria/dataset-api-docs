@@ -6,20 +6,6 @@ The following list provides information about available data. A similar output c
 The attribute `verified: yes` indicates, that data is checked with the Austrian Quality Service (AQUAS). 
 You can read more about data verification [here](https://www.zamg.ac.at/cms/de/klima/messnetze/datenpruefung).
 
-## AROME Forecast
-:resource_id:
-    arome_fcst-v1-1h-2500m
-:verified:
-    yes
-:licence:
-    {{LICENSE}}
-:types:
-    grid, timeseries
-:modes:
-    forecast
-:data portal link:
-    {{"[link]({}/dataset/arome_fcst-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
-
 ## APOLIS short daily
 :resource_id:
     apolis_short-v1-1d-100m
@@ -61,6 +47,34 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
     historical
 :data portal link:
     {{"[link]({}/dataset/histalp)".format(DATA_PORTAL_URL)}}
+
+## Nowcasting (System)
+:resource_id:
+    nowcast-v1-15min-1km
+:verified:
+    no
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/nowcast-v1-15min-1km)".format(DATA_PORTAL_URL)}}
+
+## Numerical Weather Prediction
+:resource_id:
+    nwp-v1-1h-2500m
+:verified:
+    no
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/nwp-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
 
 ## Snowgrid CL v2
 :resource_id:

@@ -2,9 +2,11 @@
 # Changelog
 
 
-(changelog-TBD)=
-## 2023-10-??
-* Released an initial version of forecast endpoints and the AROME dataset (`arome_fcst-v1-1h-2500m`).
+(changelog-20231116)=
+## 2023-11-16
+* Released an initial version of forecast endpoints
+* Forecasts: Added nowcasting dataset `nowcast-v1-15min-1km`.
+* Forecasts: Added numerical weather prediction dataset `nwp-v1-1h-2500m`.
 
 ```{note}
 Forecasts are available in `prerelease` stability. This feature is still 
