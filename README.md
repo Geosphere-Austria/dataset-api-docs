@@ -31,7 +31,7 @@ Create a python environment
 
 Build the docs
 
-    make api-docs
+    make build
 
 If you want to start a server which builds and reloads the docs automatically upon 
 changes in the source files run
