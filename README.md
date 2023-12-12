@@ -39,3 +39,15 @@ changes in the source files run
     make auto-reload-server
 
 The documentation will be available at http://localhost:8000
+
+### Containerized Build
+
+You can build a container image with the documentation via
+
+    make container-image
+
+and run the image with
+
+    make run-container
+
+The containerized documentation is available at http://localhost:8000/v1/docs
