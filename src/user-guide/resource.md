@@ -3,14 +3,9 @@
 
 The following list provides information about available data. A similar output can be received when querying `/datasets`.
 
-The attribute `verified: yes` indicates, that data is checked with the Austrian Quality Service (AQUAS). 
-You can read more about data verification [here](https://www.zamg.ac.at/cms/de/klima/messnetze/datenpruefung).
-
 ## APOLIS short daily
 :resource_id:
     apolis_short-v1-1d-100m
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -23,8 +18,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## INCA hourly
 :resource_id:
     inca-v1-1h-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -37,8 +30,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## HISTALP yearly (Austria only)
 :resource_id:
     histalp-v1-1y
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -51,8 +42,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Nowcasting (System)
 :resource_id:
     nowcast-v1-15min-1km
-:verified:
-    no
 :licence:
     {{LICENSE}}
 :types:
@@ -65,8 +54,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Numerical Weather Prediction
 :resource_id:
     nwp-v1-1h-2500m
-:verified:
-    no
 :licence:
     {{LICENSE}}
 :types:
@@ -79,8 +66,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Snowgrid CL v2
 :resource_id:
     snowgrid_cl-v2-1d-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -93,8 +78,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v1 daily (legacy) 
 :resource_id:
     spartacus-v1-1d-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -107,8 +90,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v1 monthly (legacy)
 :resource_id:
     spartacus-v1-1m-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -121,8 +102,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v2 daily
 :resource_id:
     spartacus-v2-1d-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -135,8 +114,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v2 monthly
 :resource_id:
     spartacus-v2-1m-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -149,8 +126,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v2 seasonal
 :resource_id:
     spartacus-v2-1q-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -164,8 +139,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Spartacus v2 yearly
 :resource_id:
     spartacus-v2-1y-1km
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -178,8 +151,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Synop weather station
 :resource_id:
     synop-v1-1h
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -192,8 +163,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## TAWES weather station
 :resource_id:
     tawes-v1-10min
-:verified:
-    no. Raw observation values.
 :licence:
     {{LICENSE}}
 :types:
@@ -206,8 +175,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Weather station 10 minutes
 :resource_id:
     klima-v1-10min
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -220,8 +187,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Weather station hourly
 :resource_id:
     klima-v1-1h
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -234,8 +199,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Weather station daily
 :resource_id:
     klima-v1-1d
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -248,8 +211,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 ## Weather station monthly
 :resource_id:
     klima-v1-1m
-:verified:
-    yes
 :licence:
     {{LICENSE}}
 :types:
@@ -263,8 +224,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 
 :resource_id:
     winfore-v1-1d-1km
-:verified:
-    no
 :licence:
     {{LICENSE}}
 :types:
@@ -278,8 +237,6 @@ You can read more about data verification [here](https://www.zamg.ac.at/cms/de/k
 
 :resource_id:
     winfore-v2-1d-1km
-:verified:
-    no
 :licence:
     {{LICENSE}}
 :types:
