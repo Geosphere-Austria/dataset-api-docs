@@ -6,6 +6,7 @@
 
 * Add BBOX format to description for grid queries [#19](https://github.com/Geosphere-Austria/dataset-api-docs/issues/19)
 * Fix mistyped projection `EPSG:4325` to `EPSG:4326`.
+* Remove verified information from resource list, see [#20](https://github.com/Geosphere-Austria/dataset-api-docs/issues/20).
 
 
 (changelog-20231116)=
