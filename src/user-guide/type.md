@@ -27,7 +27,7 @@ bbox
     if _type is grid_
 
     The bounding box needs to be within the limits of `bbox_outer`. Coordinates are [EPSG:4326](https://epsg.io/4326)
-    encoded.
+    encoded.  The bounding box is supplied in the format `south,west,north,east`, compare the bbox parameter in the {{"[OpenAPI documentation]({})".format(API_OPENAPI_DOCS+'#/grid/Historical_Grid_Data_grid_historical__resource_id__get')}}
 
 lat_lon 
     if _type is timeseries_
