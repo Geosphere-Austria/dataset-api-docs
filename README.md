@@ -31,7 +31,7 @@ Create a python environment
 
 Build the docs
 
-    make api-docs
+    make build
 
 If you want to start a server which builds and reloads the docs automatically upon 
 changes in the source files run
@@ -39,3 +39,15 @@ changes in the source files run
     make auto-reload-server
 
 The documentation will be available at http://localhost:8000
+
+### Containerized Build
+
+You can build a container image with the documentation via
+
+    make container-image
+
+and run the image with
+
+    make run-container
+
+The containerized documentation is available at http://localhost:8000/v1/docs
