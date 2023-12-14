@@ -1,8 +1,8 @@
 (changelog)=
 # Changelog
 
-(changelog-202311224)=
-## 2023-12-24
+(changelog-20231214)=
+## 2023-12-14
 
 * Add BBOX format to description for grid queries [#19](https://github.com/Geosphere-Austria/dataset-api-docs/issues/19)
 * Fix mistyped projection `EPSG:4325` to `EPSG:4326`.
