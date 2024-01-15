@@ -15,6 +15,30 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/apolis_short-v1-1d-100m)".format(DATA_PORTAL_URL)}}
 
+## Chemical weather prediction for Central Europe
+:resource_id:
+    chem-v1-1h-4km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem-v1-1h-4km)".format(DATA_PORTAL_URL)}}
+
+## Chemical weather prediction for Europe
+:resource_id:
+    chem-v1-1h-12km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem-v1-1h-12km)".format(DATA_PORTAL_URL)}}
+
 ## INCA hourly
 :resource_id:
     inca-v1-1h-1km

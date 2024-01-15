@@ -1,6 +1,13 @@
 (changelog)=
 # Changelog
 
+(changelog-20240115)=
+## 2024-01-15
+
+* Released two new forecast datasets:
+  * `chem-v1-1h-4km`: Chemical weather prediction for Central Europe
+  * `chem-v1-1h-12km`: Chemical weather prediction for Europe
+
 (changelog-20231214)=
 ## 2023-12-14
 
