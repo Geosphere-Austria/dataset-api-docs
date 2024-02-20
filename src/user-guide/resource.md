@@ -196,7 +196,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     None (API only)
 
-## Weather station 10 minutes
+## Weather station 10 minutes (old)
 :resource_id:
     klima-v1-10min
 :licence:
@@ -208,7 +208,23 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}
 
-## Weather station hourly
+:::{warning}
+Consider using the new dataset `klima-v2-10min` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+:::
+
+## Weather station 10 minutes
+:resource_id:
+    klima-v2-10min
+:licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/klima-v2-10min)".format(DATA_PORTAL_URL)}}
+
+## Weather station hourly (old)
 :resource_id:
     klima-v1-1h
 :licence:
@@ -220,7 +236,23 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}
 
-## Weather station daily
+:::{warning}
+Consider using the new dataset `klima-v2-1h` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+:::
+
+## Weather station hourly
+:resource_id:
+    klima-v2-1h
+:licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/klima-v2-1h)".format(DATA_PORTAL_URL)}}
+
+## Weather station daily (old)
 :resource_id:
     klima-v1-1d
 :licence:
@@ -232,7 +264,24 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}
 
-## Weather station monthly
+:::{warning}
+Consider using the new dataset `klima-v2-1d` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+:::
+
+
+## Weather station daily
+:resource_id:
+    klima-v2-1d
+:licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/klima-v2-1d)".format(DATA_PORTAL_URL)}}
+
+## Weather station monthly (old)
 :resource_id:
     klima-v1-1m
 :licence:
@@ -243,6 +292,23 @@ The following list provides information about available data. A similar output c
     historical
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}
+
+:::{warning}
+Consider using the new dataset `klima-v2-1m` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+:::
+
+
+## Weather station monthly
+:resource_id:
+    klima-v2-1m
+:licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/klima-v2-1m)".format(DATA_PORTAL_URL)}}
 
 ## WINFORE v1 (legacy)
 

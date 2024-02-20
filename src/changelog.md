@@ -1,6 +1,52 @@
 (changelog)=
 # Changelog
 
+
+(changelog-20240220)=
+## 2024-02-20
+
+### klima-v2
+
+We released a set of four new datasets, that supersede the `klima-v1` datasets:
+* `klima-v1-10min` -> `klima-v2-10min`
+* `klima-v1-1h` -> `klima-v2-1h`
+* `klima-v1-1d` -> `klima-v2-1d`
+* `klima-v1-1m` -> `klima-v2-1m`
+
+:::{warning}
+We advise you to switch your data queries to the new datasets in time. We will stop providing 
+the old `klima-v1` datasets after May 31st, 2024.
+:::
+
+#### New features
+
+The new datasets bring a few improvements over the old `klima-v1` datasets:
+* **Faster updates.** We now process each station individually and data is available, as soon as it is checked, instead of releasing in batches once per day.
+* **More stations.** Almost 100 stations (current and historic) have been added.
+* **Faster requests.** We improved data storage and retrieval. As a result `klima-v2` should serve data
+  faster than `klima-v1` endpoints.
+
+#### Backwards incompatible changes
+* **Parameter names have changed.** As part of a standardization process of parameter names among multiple datasets, parameter names were adjusted. You can find a mapping of the old parameter names to the new ones below:
+  * [klima-v2-10min.csv](_static%2Fdocuments%2Fklima-v2-10min.csv)
+  * [klima-v2-1h.csv](_static%2Fdocuments%2Fklima-v2-1h.csv)
+  * [klima-v2-1d.csv](_static%2Fdocuments%2Fklima-v2-1d.csv)
+  * [klima-v2-1m.csv](_static%2Fdocuments%2Fklima-v2-1m.csv)
+* **Do not treat `end_time` as a reliable source for the last update time.** In `klima-v1` data was only updated once a day and the delayed ingestion, made `end_time` a quite reliable indicator for available data.
+  Since we now update datasets continuously and process each station individually, there can be quite some difference between `end_time` and the station(s) you are interested in. 
+
+  
+
+### tawes-v1-10min
+
+Together with the new stations above, there are also some new real-time stations.
+
+### Docs changes
+
+* Added explanation for the availability of historic forecasts
+* Added explanation on how to pass arrays to our API
+
+
 (changelog-20240115)=
 ## 2024-01-15
 
