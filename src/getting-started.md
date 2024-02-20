@@ -48,9 +48,14 @@ we find the parameter name `TL` for air temperature and station_id `11035` for `
 
 {{"    {}/station/current/tawes-v1-10min?parameters=TL&station_ids=11035".format(API_URL)}}
 
+`parameters` and `station_ids` are array types. You can pass multiple values either as a comma-separated string,
+e.g. `parameters=TL,TLMAX` or you pass the query parameter multiple times, e.g. `parameters=TL&parameters=TLMAX`
+
+
 :::{tip}
 If you prefer to use Swagger to understand the API capabilities, see {{"[OpenAPI docs]({})".format(API_OPENAPI_DOCS)}}
 :::
+
 
 ## Further information
 
