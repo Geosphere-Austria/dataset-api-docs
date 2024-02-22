@@ -2,8 +2,8 @@
 # Changelog
 
 
-(changelog-20240220)=
-## 2024-02-20
+(changelog-20240222)=
+## 2024-02-22
 
 ### klima-v2
 
@@ -14,8 +14,7 @@ We released a set of four new datasets, that supersede the `klima-v1` datasets:
 * `klima-v1-1m` -> `klima-v2-1m`
 
 :::{warning}
-We advise you to switch your data queries to the new datasets in time. We will stop providing 
-the old `klima-v1` datasets after May 31st, 2024.
+We advise you to switch your data queries to the new datasets in time. We will stop updating `klima-v1` in the future.
 :::
 
 #### New features
@@ -28,10 +27,10 @@ The new datasets bring a few improvements over the old `klima-v1` datasets:
 
 #### Backwards incompatible changes
 * **Parameter names have changed.** As part of a standardization process of parameter names among multiple datasets, parameter names were adjusted. You can find a mapping of the old parameter names to the new ones below:
-  * [klima-v2-10min.csv](_static%2Fdocuments%2Fklima-v2-10min.csv)
-  * [klima-v2-1h.csv](_static%2Fdocuments%2Fklima-v2-1h.csv)
-  * [klima-v2-1d.csv](_static%2Fdocuments%2Fklima-v2-1d.csv)
-  * [klima-v2-1m.csv](_static%2Fdocuments%2Fklima-v2-1m.csv)
+  * [klima-v2-10min.csv](_static/documents/klima-v2-10min.csv)
+  * [klima-v2-1h.csv](_static/documents/klima-v2-1h.csv)
+  * [klima-v2-1d.csv](_static/documents/klima-v2-1d.csv)
+  * [klima-v2-1m.csv](_static/documents/klima-v2-1m.csv)
 * **Do not treat `end_time` as a reliable source for the last update time.** In `klima-v1` data was only updated once a day and the delayed ingestion, made `end_time` a quite reliable indicator for available data.
   Since we now update datasets continuously and process each station individually, there can be quite some difference between `end_time` and the station(s) you are interested in. 
 

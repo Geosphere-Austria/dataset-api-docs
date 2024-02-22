@@ -196,7 +196,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     None (API only)
 
-## Weather station 10 minutes (old)
+## Weather station 10 minutes (deprecated)
 :resource_id:
     klima-v1-10min
 :licence:
@@ -209,7 +209,7 @@ The following list provides information about available data. A similar output c
     {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}
 
 :::{warning}
-Consider using the new dataset `klima-v2-10min` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+Consider using the new dataset `klima-v2-10min` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
 :::
 
 ## Weather station 10 minutes
@@ -224,7 +224,7 @@ Consider using the new dataset `klima-v2-10min` below. This dataset will be remo
 :data portal link:
     {{"[link]({}/dataset/klima-v2-10min)".format(DATA_PORTAL_URL)}}
 
-## Weather station hourly (old)
+## Weather station hourly (deprecated)
 :resource_id:
     klima-v1-1h
 :licence:
@@ -237,7 +237,7 @@ Consider using the new dataset `klima-v2-10min` below. This dataset will be remo
     {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}
 
 :::{warning}
-Consider using the new dataset `klima-v2-1h` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+Consider using the new dataset `klima-v2-1h` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
 :::
 
 ## Weather station hourly
@@ -252,7 +252,7 @@ Consider using the new dataset `klima-v2-1h` below. This dataset will be removed
 :data portal link:
     {{"[link]({}/dataset/klima-v2-1h)".format(DATA_PORTAL_URL)}}
 
-## Weather station daily (old)
+## Weather station daily (deprecated)
 :resource_id:
     klima-v1-1d
 :licence:
@@ -265,7 +265,7 @@ Consider using the new dataset `klima-v2-1h` below. This dataset will be removed
     {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}
 
 :::{warning}
-Consider using the new dataset `klima-v2-1d` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+Consider using the new dataset `klima-v2-1d` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
 :::
 
 
@@ -281,7 +281,7 @@ Consider using the new dataset `klima-v2-1d` below. This dataset will be removed
 :data portal link:
     {{"[link]({}/dataset/klima-v2-1d)".format(DATA_PORTAL_URL)}}
 
-## Weather station monthly (old)
+## Weather station monthly (deprecated)
 :resource_id:
     klima-v1-1m
 :licence:
@@ -294,7 +294,7 @@ Consider using the new dataset `klima-v2-1d` below. This dataset will be removed
     {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}
 
 :::{warning}
-Consider using the new dataset `klima-v2-1m` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240220>`-
+Consider using the new dataset `klima-v2-1m` below. This dataset will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
 :::
 
 
