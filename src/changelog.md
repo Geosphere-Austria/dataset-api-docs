@@ -38,7 +38,13 @@ The new datasets bring a few improvements over the old `klima-v1` datasets:
 
 ### tawes-v1-10min
 
-Together with the new stations above, there are also some new real-time stations.
+In accordance with the changes above, we also added more stations to the `tawes-v1-10min` dataset.
+
+:::{note}
+In some cases, there may be stations that are only available via `tawes-v1-10min` and not in `klima-v2-10min`. 
+This can be an indicator, that these stations are very new and/or are temporary weather stations. 
+**Please note that temporary stations could be removed from the dataset without announcement!**
+:::
 
 ### Docs changes
 

@@ -30,7 +30,7 @@ Forecasts have several additional metadata attributes (available via the `/metad
 * `forecast_length` describes how many time steps a single forecast has.
 
 ```{note}
-Due to their large size only the last few forecasts are available. This means, that specifying `start` and `end` outside of `last_forecast_reftime`there will be no result.
+Due to their large size, only the last few forecasts are available. This means, specifying `start` and `end` outside of `last_forecast_reftime` will yield no results.
 ```
 
 ```{note}
