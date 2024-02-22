@@ -39,6 +39,8 @@ lat_lon
 station_ids 
     if _type is station_
 
-    The weather station id.
+    One or more weather station ids. There are two supported formats:
+    * passing as comma-separated string: `?station_ids=1,2,3`
+    * passing as multiple query parameters: `?station_ids=1&station_ids=2&station_ids=3`
 :::
 
