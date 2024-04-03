@@ -2,6 +2,13 @@
 # Changelog
 
 
+(changelog-2024-04-03)=
+## 2024-04-03
+
+### klima-v2
+
+* Fixed internal server error when requesting data that is outside of stations valid date range, see [#27](https://github.com/Geosphere-Austria/dataset-api-docs/issues/27).
+
 (changelog-20240222)=
 ## 2024-02-22
 
