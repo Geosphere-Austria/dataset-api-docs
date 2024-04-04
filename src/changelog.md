@@ -9,6 +9,10 @@
 
 * Fixed internal server error when requesting data that is outside of stations valid date range, see [#27](https://github.com/Geosphere-Austria/dataset-api-docs/issues/27).
 
+### Documentation
+
+* Added [request rate limit](request_rate_limit) information.
+
 (changelog-20240222)=
 ## 2024-02-22
 

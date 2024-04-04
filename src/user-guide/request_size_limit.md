@@ -1,5 +1,25 @@
 (request_limit)=
-# Request Size Limit
+# Request Limit
+
+Requests are limited at the rate at which requests can be sent and in the size of the data is requested.
+
+(request_rate_limit)=
+## Request rate limit
+
+A users requests are limited to `5 requests per second` and `240 requests per hour`.
+
+You can also check the response header for the rate limit, the remaining number of requests until that limit is hit and the duration until the rate limit is reset:
+
+* `x-ratelimit-limit-hour` the hourly rate limit,
+* `x-ratelimit-limit-second` the rate limit per second,
+* `x-ratelimit-remaining-second` the remaining requests per second
+* `x-ratelimit-remaining-hour` the remaining requests per second,
+* `ratelimit-reset` seconds until the rate limit is reset.
+
+The server responses with status code 429 when the rate limit is exceeded.
+
+(request_size_limit)=
+## Request Size Limit
 
 A request size limit is enforced. When the request format is `JSON` or `CSV` the limit is {{JSON_LIMIT}} values, when
 requesting NetCDF files the limit is {{FILE_LIMIT}} values.
