@@ -1,5 +1,5 @@
-sphinx
-myst-parser
-sphinx_rtd_theme
-sphinx-autobuild
-sphinx-reredirects
+sphinx~=7.2.6
+myst-parser~=2.0.0
+sphinx_rtd_theme~=2.0.0
+sphinx-autobuild~=2024.2.4
+sphinx-reredirects~=0.1.3
