@@ -4,7 +4,7 @@
 Requests are limited at the rate at which requests can be sent and in the size of the data is requested.
 
 (request_rate_limit)=
-## Request rate limit
+## Request Rate Limit
 
 A users requests are limited to `5 requests per second` and `240 requests per hour`.
 
