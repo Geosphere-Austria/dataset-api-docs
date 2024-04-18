@@ -12,6 +12,7 @@
 ### Documentation
 
 * Added [request rate limit](request_rate_limit) information.
+* Updated the [parameter mapping table](_static/documents/klima-v2-1m.csv) for monthly klima data.
 
 (changelog-20240222)=
 ## 2024-02-22
