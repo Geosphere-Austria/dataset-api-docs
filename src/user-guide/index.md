@@ -10,7 +10,7 @@ type
 mode
 resource
 openapi
-request_size_limit
+request-limit
 authentication
 license
 :::
