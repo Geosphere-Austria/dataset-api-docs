@@ -39,6 +39,18 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/chem-v1-1h-12km)".format(DATA_PORTAL_URL)}}
 
+## Ensemble Forecast
+:resource_id:
+    ensemble-v1-1h-2500m
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/ensemble-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
+
 ## INCA hourly
 :resource_id:
     inca-v1-1h-1km
