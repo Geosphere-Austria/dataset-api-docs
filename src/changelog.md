@@ -1,6 +1,10 @@
 (changelog)=
 # Changelog
 
+(changelog-2024-05-07)=
+## 2024-05-07
+
+* Added a new forecast dataset: `ensemble-v1-1h-2500m`. See the {{"[description of the dataset on our data portal]({}/dataset/ensemble-v1-1h-2500m)".format(DATA_PORTAL_URL)}}.
 
 (changelog-2024-04-03)=
 ## 2024-04-03
