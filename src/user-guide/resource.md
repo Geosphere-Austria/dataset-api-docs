@@ -123,6 +123,10 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/spartacus-v1-1d-1km)".format(DATA_PORTAL_URL)}}
 
+:::{note}
+`spartacus-v1-1d-1km` has stopped receiving data updates.
+:::
+
 ## Spartacus v1 monthly (legacy)
 :resource_id:
     spartacus-v1-1m-1km
@@ -134,6 +138,10 @@ The following list provides information about available data. A similar output c
     historical
 :data portal link:
     {{"[link]({}/dataset/spartacus-v1-1m-1km)".format(DATA_PORTAL_URL)}}
+
+:::{note}
+`spartacus-v1-1m-1km` has stopped receiving data updates.
+:::
 
 ## Spartacus v2 daily
 :resource_id:
@@ -208,7 +216,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     None (API only)
 
-## Weather station 10 minutes (deprecated)
+## Weather station 10 minutes (legacy)
 :resource_id:
     klima-v1-10min
 :licence:
@@ -220,8 +228,8 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/klima-v1-10min)".format(DATA_PORTAL_URL)}}
 
-:::{warning}
-Consider using the new dataset `klima-v2-10min` below. `klima-v1-10min` is deprecated and will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
+:::{note}
+`klima-v1-10min` has stopped receiving data updates on 2024-09-02, see {ref}`changelog<changelog-2024-09-02>`.
 :::
 
 ## Weather station 10 minutes
@@ -236,7 +244,7 @@ Consider using the new dataset `klima-v2-10min` below. `klima-v1-10min` is depre
 :data portal link:
     {{"[link]({}/dataset/klima-v2-10min)".format(DATA_PORTAL_URL)}}
 
-## Weather station hourly (deprecated)
+## Weather station hourly (legacy)
 :resource_id:
     klima-v1-1h
 :licence:
@@ -248,8 +256,8 @@ Consider using the new dataset `klima-v2-10min` below. `klima-v1-10min` is depre
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1h)".format(DATA_PORTAL_URL)}}
 
-:::{warning}
-Consider using the new dataset `klima-v2-1h` below. `klima-v1-1h` is deprecated and will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
+:::{note}
+`klima-v1-1h` has stopped receiving data updates on 2024-09-02, see {ref}`changelog<changelog-2024-09-02>`.
 :::
 
 ## Weather station hourly
@@ -264,7 +272,7 @@ Consider using the new dataset `klima-v2-1h` below. `klima-v1-1h` is deprecated 
 :data portal link:
     {{"[link]({}/dataset/klima-v2-1h)".format(DATA_PORTAL_URL)}}
 
-## Weather station daily (deprecated)
+## Weather station daily (legacy)
 :resource_id:
     klima-v1-1d
 :licence:
@@ -276,8 +284,8 @@ Consider using the new dataset `klima-v2-1h` below. `klima-v1-1h` is deprecated 
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1d)".format(DATA_PORTAL_URL)}}
 
-:::{warning}
-Consider using the new dataset `klima-v2-1d` below. `klima-v1-1d` is deprecated and will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
+:::{note}
+`klima-v1-1d` has stopped receiving data updates on 2024-09-02, see {ref}`changelog<changelog-2024-09-02>`.
 :::
 
 
@@ -293,7 +301,7 @@ Consider using the new dataset `klima-v2-1d` below. `klima-v1-1d` is deprecated 
 :data portal link:
     {{"[link]({}/dataset/klima-v2-1d)".format(DATA_PORTAL_URL)}}
 
-## Weather station monthly (deprecated)
+## Weather station monthly (legacy)
 :resource_id:
     klima-v1-1m
 :licence:
@@ -305,8 +313,8 @@ Consider using the new dataset `klima-v2-1d` below. `klima-v1-1d` is deprecated 
 :data portal link:
     {{"[link]({}/dataset/klima-v1-1m)".format(DATA_PORTAL_URL)}}
 
-:::{warning}
-Consider using the new dataset `klima-v2-1m` below. `klima-v1-1m` is deprecated and will be removed in the future, see {ref}`introduction of klima-v2 datasets <changelog-20240222>`-
+:::{note}
+`klima-v1-1m` has stopped receiving data updates on 2024-09-02, see {ref}`changelog<changelog-2024-09-02>`.
 :::
 
 
@@ -334,6 +342,10 @@ Consider using the new dataset `klima-v2-1m` below. `klima-v1-1m` is deprecated 
     historical
 :data portal link:
     {{"[link]({}/dataset/winfore-v1-1d-1km)".format(DATA_PORTAL_URL)}}
+
+:::{note}
+`winfore-v1-1d-1km` has stopped receiving data updates.
+:::
 
 ## WINFORE v2
 

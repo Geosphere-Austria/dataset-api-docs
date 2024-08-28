@@ -1,6 +1,13 @@
 (changelog)=
 # Changelog
 
+
+(changelog-2024-09-02)=
+## 2024-09-02
+* _klima-v1_ resources (`klima-v1-10min`, `klima-v1-1h`, `klima-v1-1d` and `klima-v1-1m`) stop receiving data updates. The resource can still be requested but no data past `2024-09-02` is available.
+
+Please use the corresponding _klima-v2_ resources instead.
+
 (changelog-2024-05-07)=
 ## 2024-05-07
 
