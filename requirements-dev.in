@@ -1,2 +1,2 @@
 -r requirements.in
-pip-tools~=7.4.0
+pip-tools~=7.4.1
