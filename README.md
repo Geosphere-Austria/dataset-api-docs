@@ -13,7 +13,7 @@ This is the [documentation](https://dataset.api.hub.geosphere.at/v1/docs) for th
 
 If you are facing issues with the API or if you have suggestions, please open a new issue.
 
-If your request better fits in an e-mail, please contact **datahub.feedback@geosphere.at**
+If your request better fits in an e-mail, please contact **datahub.support@geosphere.at**
 
 
 ## Build
