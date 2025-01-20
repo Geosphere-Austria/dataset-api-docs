@@ -1,8 +1,7 @@
 # dataset-api-docs
 
 > :exclamation: The Geosphere Austria data API has moved to https://dataset.api.hub.geosphere.at.
-> The API at https://dataset.api.hub.zamg.ac.at is still available but will receive maintenance updates
-> only. We recommend to use the https://dataset.api.hub.geosphere.at from now on. For more details see
+> Requests to https://dataset.api.hub.zamg.ac.at are redirected to https://dataset.api.hub.geosphere.at but we recommend to update the URL if you still use https://dataset.api.hub.zamg.ac.at. For more details see
 > [the documentations changelog](https://dataset.api.hub.geosphere.at/v1/docs/changelog.html#release-of-https-dataset-api-hub-geosphere-at).
 
 This is the [documentation](https://dataset.api.hub.geosphere.at/v1/docs) for the 
