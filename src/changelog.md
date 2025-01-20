@@ -2,6 +2,24 @@
 # Changelog
 
 
+(changelog-2025-01-22)=
+## 2025-01-22
+
+### chem-v2 replacing chem-v1
+
+Released updated datasets of the chemical forecast model (`chem-v2-1h-3km` and `chem-v2-1h-9km`) replacing the `chem-v1` datasets:
+
+- `chem-v1-1h-4km` is replaced with `chem-v2-1h-3km`
+- `chem-v1-1h-12km` is replaced with `chem-v2-1h-9km`.
+
+__The `chem-v1` datasets no longer receive data updates and are marked as `legacy` and will be removed in a future release.__
+
+There are a few changes to the chemical forecast model:
+- The spatial resolution has increased. The chemical forecast for Europe now is in 9x9km resolution (formerly 12x12km) and the chemical forecast for Central Europe is in 3x3km resolution (formerly 4x4km).
+- The center coordinate has shifted.
+- The bounding box has changed.
+
+
 (changelog-2024-09-02)=
 ## 2024-09-02
 * _klima-v1_ resources (`klima-v1-10min`, `klima-v1-1h`, `klima-v1-1d` and `klima-v1-1m`) stop receiving data updates. The resource can still be requested but no data past `2024-09-02` is available.
