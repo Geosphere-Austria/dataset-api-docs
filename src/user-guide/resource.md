@@ -15,7 +15,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/apolis_short-v1-1d-100m)".format(DATA_PORTAL_URL)}}
 
-## Chemical weather prediction for Central Europe
+## Chemical weather prediction v1 for Central Europe (legacy)
 :resource_id:
     chem-v1-1h-4km
 :licence:
@@ -27,7 +27,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/chem-v1-1h-4km)".format(DATA_PORTAL_URL)}}
 
-## Chemical weather prediction for Europe
+## Chemical weather prediction v1 for Europe (legacy)
 :resource_id:
     chem-v1-1h-12km
 :licence:
@@ -38,6 +38,30 @@ The following list provides information about available data. A similar output c
     forecast
 :data portal link:
     {{"[link]({}/dataset/chem-v1-1h-12km)".format(DATA_PORTAL_URL)}}
+
+## Chemical weather prediction v2 for Central Europe
+:resource_id:
+    chem-v2-1h-3km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem-v2-1h-3km)".format(DATA_PORTAL_URL)}}
+
+## Chemical weather prediction v2 for Europe
+:resource_id:
+    chem-v2-1h-9km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem-v2-1h-9km)".format(DATA_PORTAL_URL)}}
 
 ## Ensemble Forecast
 :resource_id:
