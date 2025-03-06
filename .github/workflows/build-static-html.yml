@@ -43,7 +43,7 @@ jobs:
           username: ${{ secrets.HARBOR_REGISTRY_USER }}
           password: ${{ secrets.HARBOR_REGISTRY_PASSWORD }}
       - name: Download build artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v4
         with:
           name: build
           path: ./build
