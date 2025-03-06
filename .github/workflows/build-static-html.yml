@@ -3,7 +3,7 @@ run-name: Build the static html files for API documenation.
 on:
   push:
     tags:
-      - *
+      - '*'
 jobs:
   build:
     runs-on: ubuntu-latest
