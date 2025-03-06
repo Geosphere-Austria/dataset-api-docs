@@ -1,8 +1,9 @@
 name: Build API Documentation
 run-name: Build the static html files for API documenation.
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - *
 jobs:
   build:
     runs-on: ubuntu-latest
