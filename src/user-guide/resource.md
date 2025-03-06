@@ -238,7 +238,7 @@ The following list provides information about available data. A similar output c
 :modes:
     historical, current
 :data portal link:
-    None (API only)
+    {{"[link]({}/dataset/tawes-v1-10min)".format(DATA_PORTAL_URL)}}
 
 ## Weather station 10 minutes (legacy)
 :resource_id:
