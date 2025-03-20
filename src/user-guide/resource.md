@@ -354,6 +354,19 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/klima-v2-1m)".format(DATA_PORTAL_URL)}}
 
+## Weather station yearly
+:resource_id:
+    klima-v2-1y
+:licence:
+    {{LICENSE}}
+:types:
+    station
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/klima-v2-1y)".format(DATA_PORTAL_URL)}}
+
+
 ## WINFORE v1 (legacy)
 
 :resource_id:
