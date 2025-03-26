@@ -1,6 +1,13 @@
 (changelog)=
 # Changelog
 
+(changelog-2025-03-26)=
+## 2025-03-26
+
+### klima-v2-1y
+
+A new dataset for yearly weather station data is released: `klima-v2-1y`.
+
 
 (changelog-2025-01-22)=
 ## 2025-01-22
