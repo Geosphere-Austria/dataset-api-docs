@@ -2,6 +2,16 @@
 # Changelog
 
 (changelog-2025-03-26)=
+
+## 2025-05-??
+
+### code lists
+
+Parameter metadata now supports code-lists with an optional `code_list_ref` field (as part of a parameter metadata). 
+Available code-lists are gathered in a `code_lists` dictionary in the metadata body. 
+
+Not all datasets offer support for code-lists at this moment - try `klima-v2-*` for now. 
+
 ## 2025-03-26
 
 ### klima-v2-1y
