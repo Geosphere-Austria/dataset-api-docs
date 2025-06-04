@@ -1,0 +1,42 @@
+stages:
+  - generate
+  - build
+
+variables:
+  PROD_IMAGE_NAME: $HARBOR_REGISTRY/$CI_PROJECT_NAME/$CI_PROJECT_NAME
+
+include:
+  - component: gitlab.geosphere.at/app/devops/ci-components/buildah/build-and-push@1.0.0
+    inputs:
+      job_name: build_image
+      buildah_registry_url: ${HARBOR_REGISTRY}/${QUAY_CACHE}
+      registry_user: $HARBOR_REGISTRY_USER
+      registry_password: $HARBOR_REGISTRY_PASSWORD
+      registry_project: $CI_PROJECT_NAME/$CI_PROJECT_NAME
+      image_tags:
+        - $CI_COMMIT_REF_NAME
+
+generate_docs:
+  stage: generate
+  image: $HARBOR_REGISTRY/library/python:3.10.5-bullseye
+  script:
+    - pip install -r requirements.txt
+    - sphinx-build -b html src/ build/
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 week
+
+
+build_image:
+  stage: build
+  needs: ["generate_docs"]
+  only:
+    - tags
+  retry:
+    max: 1
+    when:
+      - stuck_or_timeout_failure
+      - unknown_failure
+      - runner_system_failure
+      - script_failure
