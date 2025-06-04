@@ -13,7 +13,7 @@ You can also check the response header for the rate limit, the remaining number 
 * `x-ratelimit-limit-hour` the hourly rate limit,
 * `x-ratelimit-limit-second` the rate limit per second,
 * `x-ratelimit-remaining-second` the remaining requests per second
-* `x-ratelimit-remaining-hour` the remaining requests per second,
+* `x-ratelimit-remaining-hour` the remaining requests per hour,
 * `ratelimit-reset` seconds until the rate limit is reset.
 
 The server responses with status code 429 when the rate limit is exceeded.

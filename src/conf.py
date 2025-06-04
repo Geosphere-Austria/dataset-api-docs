@@ -19,7 +19,7 @@
 import sphinx_rtd_theme  # import needed even though it is not called explicitly  # noqa: F401
 
 project = "Dataset API Documentation"
-copyright = "2023, Geosphere Austria"
+copyright = "2025, Geosphere Austria"
 author = "Geosphere Austria"
 
 # The full version, including alpha/beta/rc tags
@@ -62,6 +62,16 @@ redirects = {
 html_theme = "sphinx_rtd_theme"
 html_favicon = "_static/images/icon.svg"
 html_logo = "_static/images/logo_negative_lime.svg"
+github_url = "https://github.com//"
+
+
+html_context = {
+    "display_github": True, # Integrate GitHub
+    "github_user": "Geosphere-Austria", # Username
+    "github_repo": "dataset-api-docs", # Repo name
+    "github_version": "main", # Version
+    "conf_py_path": "/src/", # Path in the checkout to the docs root
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

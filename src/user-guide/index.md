@@ -5,12 +5,12 @@
 :maxdepth: 2
 :name: usagetoc
 
+authentication
 endpoints
 type
 mode
 resource
 openapi
 request-limit
-authentication
 license
 :::
