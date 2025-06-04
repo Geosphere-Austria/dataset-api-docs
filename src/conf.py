@@ -69,7 +69,7 @@ html_context = {
     "display_github": True, # Integrate GitHub
     "github_user": "Geosphere-Austria", # Username
     "github_repo": "dataset-api-docs", # Repo name
-    "github_version": "master", # Version
+    "github_version": "main", # Version
     "conf_py_path": "/src/", # Path in the checkout to the docs root
 }
 
