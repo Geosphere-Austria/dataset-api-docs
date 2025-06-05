@@ -1,17 +1,92 @@
 (changelog)=
 # Changelog
 
-(changelog-2025-03-26)=
 
-## 2025-05-??
+(changelog-2025-06-05)=
+## 2025-06-05
 
-### code lists
+### code-list support
 
 Parameter metadata now supports code-lists with an optional `code_list_ref` field (as part of a parameter metadata). 
 Available code-lists are gathered in a `code_lists` dictionary in the metadata body. 
 
-Not all datasets offer support for code-lists at this moment - try `klima-v2-*` for now. 
+e.g.: 
 
+```json
+# metadata body
+{
+  # ...
+  "parameters": [
+   #...
+   {
+      "name": "rrm",
+      "long_name": "Niederschlagsdauer",
+      "description": "Niederschlagsdauer, berechnet aus 1-Minuten-Niederschlagsmelder-Daten",
+      "unit": "min",
+      "code_list_ref": "c1"
+   },
+   {
+      "name": "zeitx_flag",
+      "long_name": "Qualitätsflag für Zeitpunkt der maximalen Windgeschwindigkeit (Spitzenböe)",
+      "description": "Qualitätsflag für Zeitpunkt der maximalen Windgeschwindigkeit (Spitzenböe) in 10m Höhe, 10-Minuten-Wert",
+      "unit": "code",
+      "code_list_ref": "q21"
+    }
+  ],
+  "code_lists": {
+    "c1": [
+      {
+        "key": 0,
+        "value": "kein Niederschlag gemessen"
+      },
+      {
+        "key": 1,
+        "value": "Niederschlag gemessen"
+      }
+    ],
+    "q21": [
+      {
+        "key": null,
+        "value": "undefiniert"
+      },
+      {
+        "key": 0,
+        "value": "ungeprüfte Daten"
+      },
+      {
+        "key": 10,
+        "value": "automatisch geprüft"
+      },
+      {
+        "key": 11,
+        "value": "automatisch geprüft (verändert)"
+      },
+      {
+        "key": 12,
+        "value": "automatisch geprüft (original)"
+      },
+      {
+        "key": 20,
+        "value": "manuell geprüft (unbekannt)"
+      },
+      {
+        "key": 21,
+        "value": "manuell geprüft (verändert)"
+      },
+      {
+        "key": 22,
+        "value": "manuell geprüft (original)"
+      }
+    ]
+  },
+ #...
+}
+```
+:::{tip}
+only `klima-v2-*` datasets offer support for code-lists at this moment.
+:::
+
+(changelog-2025-03-26)=
 ## 2025-03-26
 
 ### klima-v2-1y
