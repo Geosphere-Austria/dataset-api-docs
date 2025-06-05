@@ -10,6 +10,8 @@ jobs:
     if: github.event.label.name == 'PR-Sync-Merge'
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Sync approved PRs to internal codebase
         env:
           GITLAB_URL: ${{ secrets.GITLAB_URL }}
