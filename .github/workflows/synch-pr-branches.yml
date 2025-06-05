@@ -11,8 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Sync approved PRs to internal codebase
-        uses: keninkujovic/gitlab-sync@2.1.0
-        with:
-          gitlab_url: ${{ secrets.GITLAB_URL }}
-          gitlab_pat: ${{ secrets.GITLAB_TOKEN }}
-          username: ${{ secrets.GIT_CONFIG_NAME }}
+        env:
+          GITLAB_URL: ${{ secrets.GITLAB_URL }}
+          GITLAB_PAT: ${{ secrets.GITLAB_TOKEN }}
+          GITLAB_USERNAME: ${{ secrets.GIT_CONFIG_NAME }}
+        run: |
+          export GIT_SSH_COMMAND='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+          gitlab_repo_url=$GITLAB_URL
+          gitlab_repo_url=${gitlab_repo_url#https://}
+          gitlab_repo_url_with_credentials="https://${GITLAB_USERNAME}:${GITLAB_PAT@}${gitlab_repo_url}"
+          git remote add gitlab "$gitlab_repo_url_with_credentials"
+          git push gitlab $GITHUB_REF_NAME
+        shell: bash
+
