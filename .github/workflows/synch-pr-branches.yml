@@ -24,6 +24,7 @@ jobs:
           gitlab_repo_url_with_credentials="https://${GITLAB_USERNAME}:${GITLAB_PAT}@${gitlab_repo_url}"
           git remote add gitlab "$gitlab_repo_url_with_credentials"
           echo "Source branch: ${{ github.head_ref }}"
+          git switch ${{ github.head_ref }}
           git push gitlab ${{ github.head_ref }} --force
         shell: bash
 
