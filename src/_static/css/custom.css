@@ -1,4 +1,45 @@
 
+.rst-content code.literal {
+    color: #052E37;
+}
+
+.rst-content :is(.note, .tip) {
+    background: #BFCE40;
+}
+
+.rst-content :is(.note, .tip) .admonition-title
+{
+   background: #BFCE40; !important;
+    color: #052E37
+}
+
+.rst-content .attention {
+    background: #BFCE40;
+}
+
+.rst-content .attention{
+    background: #052E37; !important;
+    color: #FFFFFF
+}
+
+.rst-content .attention > p > a {
+    color: #BFCE40;
+}
+.rst-content :is(.note, .tip) > p > a {
+    color: #FFFFFF;
+}
+
+
+.rst-content .attention .admonition-title{
+    background: #BFCE40; !important;
+    color: #052E37
+}
+
+
+.admonition .admonition-title{
+   background: #BFCE40; !important;
+}
+
 .wy-nav-side {
     background: #052E37
 }
