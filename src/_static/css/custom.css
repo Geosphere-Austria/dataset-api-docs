@@ -13,16 +13,13 @@
     color: #052E37
 }
 
-.rst-content .attention {
-    background: #BFCE40;
-}
 
-.rst-content .attention{
+.rst-content :is(.attention, .warning) {
     background: #052E37; !important;
     color: #FFFFFF
 }
 
-.rst-content .attention > p > a {
+.rst-content :is(.attention, .warning) > p > a {
     color: #BFCE40;
 }
 .rst-content :is(.note, .tip) > p > a {
@@ -30,7 +27,7 @@
 }
 
 
-.rst-content .attention .admonition-title{
+.rst-content :is(.attention, .warning) .admonition-title{
     background: #BFCE40; !important;
     color: #052E37
 }
