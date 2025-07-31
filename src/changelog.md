@@ -1,6 +1,22 @@
 (changelog)=
 # Changelog
 
+(changelog-upcoming)=
+## Upcoming changes
+
+(changelog-eol-redirects)=
+### End of redirects from `*.hub.zamg.ac.at` to `*.hub.geosphere.at` at the end of 2025
+
+Redirects from `hub.zamg.ac.at` and all its subdomains to `hub.geosphere.at` are planed to stop at the end of the year 2025 after which requests to `hub.zamg.ac.at` result in a 404 Not Found.
+
+If your URL still contains `hub.zamg.ac.at` make sure to change it to `hub.geosphere.at` latest by 2025-12-31. All other parts of the URL should be unaffected.
+
+Examples:
+`https://data.hub.zamg.ac.at` -> `https://data.hub.geosphere.at`
+`https://dataset.api.hub.zamg.ac.at` -> `https://dataset.api.hub.geosphere.at`
+`https://dataset.api.hub.zamg.ac.at/v1/grid/historical/inca-v1-1h-1km/metadata` -> `https://dataset.api.hub.geosphere.at/v1/grid/historical/inca-v1-1h-1km/metadata`
+
+No action is required if you are using `hub.geosphere.at` already.
 
 (changelog-2025-06-05)=
 ## 2025-06-05
@@ -167,7 +183,6 @@ The new datasets bring a few improvements over the old `klima-v1` datasets:
 * **Do not treat `end_time` as a reliable source for the last update time.** In `klima-v1` data was only updated once a day and the delayed ingestion, made `end_time` a quite reliable indicator for available data.
   Since we now update datasets continuously and process each station individually, there can be quite some difference between `end_time` and the station(s) you are interested in. 
 
-  
 
 ### tawes-v1-10min
 
@@ -218,7 +233,7 @@ Make sure you follow updates on the changelog and give us feedback on the endpoi
 
 ### Redirecting requests to {{"[{}]({})".format(BASE_URL, BASE_URL)}}
 
-Requests to {{"`{}`".format(LEGACY_BASE_URL)}} are now fowarded to {{"`{}`".format(BASE_URL)}} with a HTTP 301 redirect.
+Requests to {{"`{}`".format(LEGACY_BASE_URL)}} are now forwarded to {{"`{}`".format(BASE_URL)}} with a HTTP 301 redirect.
 Make sure to update your code, to point to the new domain.
 Check this changelog or the [Github Repository](https://github.com/Geosphere-Austria/dataset-api-docs) for updates regarding end-of-life
 of this redirect.
