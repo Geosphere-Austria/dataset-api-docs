@@ -16,7 +16,7 @@ build:  ## Build api documentation
 	sphinx-build -b html src/ build/
 
 .PHONY: auto-reload-server
-auto-reload-server:  ## Start sphinx autobild server
+auto-reload-server:  ## Start sphinx autobuild server
 	. ${VENV}/bin/activate; \
 	sphinx-autobuild -b html --host localhost src/ build
 

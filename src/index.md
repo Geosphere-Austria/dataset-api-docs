@@ -4,7 +4,7 @@
 ```{attention}
 ## Got redirected?
 Requests to `https://dataset.api.hub.zamg.ac.at/v1/docs` redirect here.
-Please read the information about changes in regards to this new URL in the [release note](changelog-20230718-geosphere).
+Please read the information about changes regarding the new URL in the [release note](changelog-20230718-geosphere).
 
 If you are still using `*.hub.zamg.ac.at` make sure to update the URL to `*.hub.geosphere.at` by the end of the year 2025. More information is available in the [changelog announcement](changelog-eol-redirects).
 ```

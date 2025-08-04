@@ -1,6 +1,6 @@
 # dataset-api-docs
 
-> :exclamation: The Geosphere Austria data API has moved to https://dataset.api.hub.geosphere.at. Redirects from `*.hub.zamg.ac.at` to `*.hub.geosphere.at` will end by the year of 2025.
+> :exclamation: The Geosphere Austria data API has moved to https://dataset.api.hub.geosphere.at. Redirects from `*.hub.zamg.ac.at` to `*.hub.geosphere.at` will end in December 2025.
 > If you are still using the `*.hub.zamg.ac.at` you must update the URL latest by 2025-12-31. Fore more details see the [documentations changelog](https://dataset.api.hub.geosphere.at/v1/docs/changelog.html#changelog-eol-redirects
 
 This is the [documentation](https://dataset.api.hub.geosphere.at/v1/docs) for the 
