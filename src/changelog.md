@@ -5,7 +5,7 @@
 ## Upcoming changes
 
 (changelog-eol-redirects)=
-### End of redirects from `*.hub.zamg.ac.at` to `*.hub.geosphere.at` at the end of 2025
+### Termination of redirects from `*.hub.zamg.ac.at` to `*.hub.geosphere.at` at the end of 2025
 
 Redirects from `hub.zamg.ac.at` and all its subdomains to `hub.geosphere.at` are planned to end in December 2025, after which requests to `hub.zamg.ac.at` will result in a 404 Not Found.
 
