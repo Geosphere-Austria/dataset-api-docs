@@ -11,10 +11,11 @@ Redirects from `hub.zamg.ac.at` and all its subdomains to `hub.geosphere.at` are
 
 If your URL still contains `hub.zamg.ac.at`, make sure to change it to `hub.geosphere.at` by 2025-12-31. All other parts of the URL should be unaffected.
 
-Examples:
-`https://data.hub.zamg.ac.at` -> `https://data.hub.geosphere.at`
-`https://dataset.api.hub.zamg.ac.at` -> `https://dataset.api.hub.geosphere.at`
-`https://dataset.api.hub.zamg.ac.at/v1/grid/historical/inca-v1-1h-1km/metadata` -> `https://dataset.api.hub.geosphere.at/v1/grid/historical/inca-v1-1h-1km/metadata`
+Examples:\
+`https://data.hub.zamg.ac.at` -> `https://data.hub.geosphere.at`\
+`https://dataset.api.hub.zamg.ac.at` -> `https://dataset.api.hub.geosphere.at`\
+`https://dataset.api.hub.zamg.ac.at/v1/grid/historical/inca-v1-1h-1km/metadata` ->\
+`https://dataset.api.hub.geosphere.at/v1/grid/historical/inca-v1-1h-1km/metadata`
 
 No action is required if you are using `hub.geosphere.at` already.
 
