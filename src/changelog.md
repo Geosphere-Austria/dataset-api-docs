@@ -29,7 +29,7 @@ Available code-lists are gathered in a `code_lists` dictionary in the metadata b
 
 e.g.: 
 
-```json
+```
 # metadata body
 {
   # ...

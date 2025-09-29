@@ -1,4 +1,47 @@
+
+.rst-content code.literal {
+    color: #052E37;
+}
+
+.rst-content :is(.note, .tip) {
+    background: #BFCE40;
+}
+
+.rst-content :is(.note, .tip) .admonition-title
+{
+   background: #BFCE40; !important;
+    color: #052E37
+}
+
+
+.rst-content :is(.attention, .warning) {
+    background: #052E37; !important;
+    color: #FFFFFF
+}
+
+.rst-content :is(.attention, .warning) > p > a {
+    color: #BFCE40;
+}
+.rst-content :is(.note, .tip) > p > a {
+    color: #FFFFFF;
+}
+
+
+.rst-content :is(.attention, .warning) .admonition-title{
+    background: #BFCE40; !important;
+    color: #052E37
+}
+
+
+.admonition .admonition-title{
+   background: #BFCE40; !important;
+}
+
 .wy-nav-side {
+    background: #052E37
+}
+
+.wy-nav-top {
     background: #052E37
 }
 
@@ -6,8 +49,13 @@
     background-color:#BFCE40;
 }
 
+.wy-side-nav-search>a img.logo {
+    width: 80%;
+    margin: 25px;
+}
+
+
 .wy-side-nav-search .icon {
-    width: 100%;
     color: #052E37;
 }
 

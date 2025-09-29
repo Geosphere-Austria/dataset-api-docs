@@ -18,7 +18,7 @@ include:
 
 generate_docs:
   stage: generate
-  image: $HARBOR_REGISTRY/library/python:3.10.5-bullseye
+  image: $HARBOR_REGISTRY/cache-dockerhub/library/python:3.12-bullseye
   script:
     - pip install -r requirements.txt
     - sphinx-build -b html src/ build/
