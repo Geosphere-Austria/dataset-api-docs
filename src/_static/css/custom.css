@@ -49,9 +49,13 @@
     background-color:#BFCE40;
 }
 
+.wy-side-nav-search>a {
+    display: block;
+    padding: 2rem;
+}
+
 .wy-side-nav-search>a img.logo {
-    width: 80%;
-    margin: 25px;
+    max-height: 5rem;
 }
 
 
