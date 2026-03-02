@@ -97,7 +97,7 @@ The following list provides information about available data. A similar output c
 :modes:
     historical
 :data portal link:
-    {{"[link]({}/dataset/histalp)".format(DATA_PORTAL_URL)}}
+    {{"[link]({}/dataset/histalp-v1-1y)".format(DATA_PORTAL_URL)}}
 
 ## Nowcasting (System)
 :resource_id:
