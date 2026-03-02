@@ -27,6 +27,10 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/chem-v1-1h-4km)".format(DATA_PORTAL_URL)}}
 
+:::{note}
+`chem-v1-1h-4km` has stopped receiving data updates.
+:::
+
 ## Chemical weather prediction v1 for Europe (legacy)
 :resource_id:
     chem-v1-1h-12km
@@ -38,6 +42,10 @@ The following list provides information about available data. A similar output c
     forecast
 :data portal link:
     {{"[link]({}/dataset/chem-v1-1h-12km)".format(DATA_PORTAL_URL)}}
+
+:::{note}
+`chem-v1-1h-12km` has stopped receiving data updates.
+:::
 
 ## Chemical weather prediction v2 for Central Europe
 :resource_id:
@@ -97,7 +105,7 @@ The following list provides information about available data. A similar output c
 :modes:
     historical
 :data portal link:
-    {{"[link]({}/dataset/histalp)".format(DATA_PORTAL_URL)}}
+    {{"[link]({}/dataset/histalp-v1-1y)".format(DATA_PORTAL_URL)}}
 
 ## Nowcasting (System)
 :resource_id:
