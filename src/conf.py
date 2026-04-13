@@ -82,7 +82,6 @@ html_css_files = [
 ]
 html_theme_options={
     'logo_only': True,
-    'display_version': False,
 }
 
 myst_enable_extensions = [
