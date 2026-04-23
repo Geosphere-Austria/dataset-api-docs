@@ -19,7 +19,7 @@
 import sphinx_rtd_theme  # import needed even though it is not called explicitly  # noqa: F401
 
 project = "Dataset API Documentation"
-copyright = "2025, Geosphere Austria"
+copyright = "2026, Geosphere Austria"
 author = "Geosphere Austria"
 
 # The full version, including alpha/beta/rc tags
