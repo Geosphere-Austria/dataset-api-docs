@@ -9,64 +9,65 @@
 (changelog-2026-04-15)=
 ## 2026-04-15
 
-### spatial resolution metadata
+### Changes in Spatial Resolution Metadata Representation
 
-the metadata responsese of grid-based datasets held information about the grid resolution in the `spatial_resolution` field:
-e.g.
+Until now the spatial resolution information of grid-based datasets was provided in the resources metadata response by `crs` and `spatial_resolution_m`. For example:
 
 ```json
 // ...
 "spatial_resolution_m": 100,
-"crs":"EPSG:31287",
+"crs": "EPSG:31287",
 // ...
 ```
 
-Due to the projection ([Austria Lambert](https://epsg.io/31287)) a knowledgeable user knows that unit is meters, but this information wasn't available explicitly as part of the metadata response.
+`spatial_resolution_m` is an integer value giving the distance between two points on the x and y axis in meters. This limits the resource datasets to projections which are using meters (as in this example [Austria Lambert](https://epsg.io/31287)) and uniform (square) grids.
 
-With this update we try to provide more exact details:
+To overcome these limitations we deprecate `spatial_resolution_m` and introduce the new metadata fields `spatial_resolution` and `spatial_resolution_unit`.
 
-```json
-// ...
-"spatial_resolution_m":100  // deprecated - for backwards compatibility only
-// ....
-"spatial_resolution": 100
-"spatial_resolution_unit":"m"
-"crs":"EPSG:31287",
-// ...
-```
 
 #### spatial_resolution_unit
 
-We support meters (`m`) and degrees (`deg`) at the moment.
+We support meters (`m`) and degrees (`deg`) at the moment. This allows the use of degree-based projections such as [EPSG:4326 (WGS 84)](https://epsg.io/4326).
 
 #### spatial_resolution
 
-`spatial_resolution` can hold one or two-dimensional resolution information. e.g.:
+`spatial_resolution` is a two-dimensional coordinate-vector that specifies the longitudinal and latitudinal distances between two grid points.
+
+
+```{hint}
+Coordinates are always given in `[<LONGITUDE>, <LATITUDE>]` order.
+```
+
+
+#### spatial_resolution_m [Deprecated]
+
+`spatial_resolution_m` is deprecated and will be removed in a future release.
+
+```{attention} 
+The information conveyed by `spatial_resolution` and `spatial_resolution_unit` may be at odds with `spatial_resolution_m`. In this case `spatial_resolution` and `spatial_resolution_unit` always take precedence and conveys the correct information.
+```
+
+#### Examples
 
 ```json
-"spatial_resolution_m": 2200,  // deprecated, and wrong in this case
-"spatial_resolution": [0.028, 0.018],  // <lon,lat>, notice the non-uniform resolution
-"spatial_resolution_unit": "deg"
+"spatial_resolution_m": 2200,  // deprecated and incorrect
+"spatial_resolution": [0.028, 0.018],  // [lon,lat], non-uniform resolution
+"spatial_resolution_unit": "deg"  // degrees
 "crs": "EPSG:4326",
 ```
 
 ```json
 "spatial_resolution_m": 2200,  // deprecated
-"spatial_resolution": [0.2,0.2],  // <lon,lat>, uniform resolution
-"spatial_resolution_unit": "deg",
+"spatial_resolution": [0.2, 0.2],  // [lon,lat], uniform resolution
+"spatial_resolution_unit": "deg",  // degrees
 "crs": "EPSG:4326",
 ```
 
 ```json
 "spatial_resolution_m": 1000,  // deprecated
-"spatial_resolution": [1000,1000],  // <lon,lat>, uniform resolution
-"spatial_resolution_unit": "m",
+"spatial_resolution": [1000, 1000],  // [lon,lat], uniform resolution
+"spatial_resolution_unit": "m",  // meters
 "crs": "EPSG:31287",
-```
-
-```{attention}
-#### coordinate order
-It's `[ <LONGITUDE>, <LATITUDE> ]` always!
 ```
 
 ### tawes-v1-10min latency improvements
