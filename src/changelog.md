@@ -15,24 +15,24 @@ the metadata responsese of grid-based datasets held information about the grid r
 e.g.
 
 ```json
-# ...
+// ...
 "spatial_resolution_m": 100,
 "crs":"EPSG:31287",
-# ...
+// ...
 ```
 
-Due to the projection ((Austria Lambert)[https://epsg.io/31287]) a knowledgable user knows that unit is meters, but this information wasn't available explicitely as part of the metadata response.
+Due to the projection ([Austria Lambert](https://epsg.io/31287)) a knowledgeable user knows that unit is meters, but this information wasn't available explicitly as part of the metadata response.
 
 With this update we try to provide more exact details:
 
 ```json
-# ...
-"spatial_resolution_m":100 # deprecated - for backwards compatibility only
-# ....
+// ...
+"spatial_resolution_m":100  // deprecated - for backwards compatibility only
+// ....
 "spatial_resolution": 100
 "spatial_resolution_unit":"m"
 "crs":"EPSG:31287",
-# ...
+// ...
 ```
 
 #### spatial_resolution_unit
@@ -44,22 +44,22 @@ We support meters (`m`) and degrees (`deg`) at the moment.
 `spatial_resolution` can hold one or two-dimensional resolution information. e.g.:
 
 ```json
-"spatial_resolution_m": 2200, # deprecated, and wrong in this case
-"spatial_resolution": [0.028, 0.018], # <lon,lat>, notice the non-uniform resolution
-"spatial_resolution_unit":"deg"
+"spatial_resolution_m": 2200,  // deprecated, and wrong in this case
+"spatial_resolution": [0.028, 0.018],  // <lon,lat>, notice the non-uniform resolution
+"spatial_resolution_unit": "deg"
 "crs": "EPSG:4326",
 ```
 
 ```json
-"spatial_resolution_m": 2200, # deprecated
-"spatial_resolution": [0.2,0.2], # <lon,lat>, uniform resolution
+"spatial_resolution_m": 2200,  // deprecated
+"spatial_resolution": [0.2,0.2],  // <lon,lat>, uniform resolution
 "spatial_resolution_unit": "deg",
 "crs": "EPSG:4326",
 ```
 
 ```json
-"spatial_resolution_m": 1000, # deprecated
-"spatial_resolution": [1000,1000], # <lon,lat>, uniform resolution
+"spatial_resolution_m": 1000,  // deprecated
+"spatial_resolution": [1000,1000],  // <lon,lat>, uniform resolution
 "spatial_resolution_unit": "m",
 "crs": "EPSG:31287",
 ```
