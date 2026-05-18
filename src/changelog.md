@@ -6,6 +6,75 @@
 
 ### -
 
+(changelog-2026-05-18)=
+## 2026-05-18
+
+### Changes in Spatial Resolution Metadata Representation
+
+Until now the spatial resolution information of grid-based datasets was provided in the resources metadata response by `crs` and `spatial_resolution_m`. For example:
+
+```json
+// ...
+"spatial_resolution_m": 100,
+"crs": "EPSG:31287",
+// ...
+```
+
+`spatial_resolution_m` is an integer value giving the distance between two points on the x and y axis in meters. This limits the resource datasets to projections which are using meters (as in this example [Austria Lambert](https://epsg.io/31287)) and uniform (square) grids.
+
+To overcome these limitations we deprecate `spatial_resolution_m` and introduce the new metadata fields `spatial_resolution` and `spatial_resolution_unit`.
+
+
+#### spatial_resolution_unit
+
+We support meters (`m`) and degrees (`deg`) at the moment. This allows the use of degree-based projections such as [EPSG:4326 (WGS 84)](https://epsg.io/4326).
+
+#### spatial_resolution
+
+`spatial_resolution` is a two-dimensional coordinate-vector that specifies the longitudinal and latitudinal distances between two grid points.
+
+
+```{hint}
+Coordinates are always given in `[<LONGITUDE>, <LATITUDE>]` order.
+```
+
+
+#### spatial_resolution_m [Deprecated]
+
+`spatial_resolution_m` is deprecated and will be removed in a future release.
+
+```{attention} 
+The information conveyed by `spatial_resolution` and `spatial_resolution_unit` may be at odds with `spatial_resolution_m`. In this case `spatial_resolution` and `spatial_resolution_unit` always take precedence and conveys the correct information.
+```
+
+#### Examples
+
+```json
+"spatial_resolution_m": 2200,  // deprecated and incorrect
+"spatial_resolution": [0.028, 0.018],  // [lon,lat], non-uniform resolution
+"spatial_resolution_unit": "deg"  // degrees
+"crs": "EPSG:4326",
+```
+
+```json
+"spatial_resolution_m": 2200,  // deprecated
+"spatial_resolution": [0.2, 0.2],  // [lon,lat], uniform resolution
+"spatial_resolution_unit": "deg",  // degrees
+"crs": "EPSG:4326",
+```
+
+```json
+"spatial_resolution_m": 1000,  // deprecated
+"spatial_resolution": [1000, 1000],  // [lon,lat], uniform resolution
+"spatial_resolution_unit": "m",  // meters
+"crs": "EPSG:31287",
+```
+
+### tawes-v1-10min latency improvements
+
+We optimized and upgraded some internal workings. You should see see significant improvements of requests to the `/v1/station/historical/tawes-v1-10min/metadata` and `/v1/station/current/tawes-v1-10min/metadata` endpoints as well  as some improvements on data requests.
+
+
 (changelog-2026-01-15)=
 ## 2026-01-15
 
