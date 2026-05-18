@@ -6,8 +6,8 @@
 
 ### -
 
-(changelog-2026-04-15)=
-## 2026-04-15
+(changelog-2026-05-18)=
+## 2026-05-18
 
 ### Changes in Spatial Resolution Metadata Representation
 
