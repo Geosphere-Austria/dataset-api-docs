@@ -6,6 +6,11 @@
 
 ### -
 
+(changelog-2026-05-27)
+## 2026-05-27>
+
+A new resource `apolis-v2-1d-100m` has been added replacing `apolis_short-v1-1d-100m` which will no longer receiving data updates, see {ref}`resources<resources>`.
+
 (changelog-2026-05-18)=
 ## 2026-05-18
 
