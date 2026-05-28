@@ -15,6 +15,22 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/apolis_short-v1-1d-100m)".format(DATA_PORTAL_URL)}}
 
+:::{note}
+`apolis_short-v1-1d-100m` has stopped receiving data updates.
+:::
+
+## APOLIS-v2: Daily Solar Radiation Data for Austria
+:resource_id:
+    apolis-v2-1d-100m
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/apolis-v2-1d-100m)".format(DATA_PORTAL_URL)}}
+
 ## Chemical weather prediction v1 for Central Europe (legacy)
 :resource_id:
     chem-v1-1h-4km

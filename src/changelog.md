@@ -1,10 +1,12 @@
 (changelog)=
 # Changelog
 
-(changelog-upcoming)=
-## Upcoming changes
+(changelog-2026-05-27)=
+## 2026-05-27
 
-### -
+### New Resource apolis-v2-1d-100m
+
+A new resource `apolis-v2-1d-100m` has been added. It replaces `apolis_short-v1-1d-100m` which will no longer receiving data updates. For more details see {ref}`here<resources>`.
 
 (changelog-2026-05-18)=
 ## 2026-05-18
