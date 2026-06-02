@@ -1,6 +1,13 @@
 (changelog)=
 # Changelog
 
+(changelog-2026-06-??)=
+## 2026-06-??
+
+### Updated dataset titles for `klima-v2-*`
+
+`klima-v2-*` datasets got new titles (in German only, sorry ), e.g. `Messstationen Zehnminutendaten v2` (old) v.s. `Qualitätsgeprüfte Stationsdaten für Österreich in zehnminütiger Auflösung (v2)` (new)
+
 (changelog-2026-05-27)=
 ## 2026-05-27
 
