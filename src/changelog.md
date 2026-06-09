@@ -1,8 +1,8 @@
 (changelog)=
 # Changelog
 
-(changelog-2026-06-??)=
-## 2026-06-??
+(changelog-2026-06-09)=
+## 2026-06-09
 
 ### Updated dataset titles for `klima-v2-*`
 
