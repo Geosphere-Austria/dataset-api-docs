@@ -1,6 +1,17 @@
 (changelog)=
 # Changelog
 
+(changelog-2026-07-08)=
+## 2026-07-08
+
+### New Resource `chem_aqi-v1-1d-3km`
+
+### New Resource `chem_dust-v1-1h-0p2deg`
+
+### New Resource `spartacus-v3-*`
+
+New resources `spartacus-v3-1d-1km`, `spartacus-v3-1m-1km`, `spartacus-v3-1q-1km` and `spartacus-v3-1y-1km` have been added succeeding their corresponding `spartacus-v2-*` datasets. The `spartacus-v2` datasets are now deprecated and will stop receiving data updates in the future.
+
 (changelog-2026-06-09)=
 ## 2026-06-09
 
