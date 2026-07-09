@@ -3,6 +3,18 @@
 
 The following list provides information about available data. A similar output can be received when querying `/datasets`.
 
+## Air Quality Index for Austria
+:resource_id:
+    chem_aqi-v1-1d-3km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem_aqi-v1-1d-3km)".format(DATA_PORTAL_URL)}}
+
 ## APOLIS short daily
 :resource_id:
     apolis_short-v1-1d-100m
@@ -86,6 +98,18 @@ The following list provides information about available data. A similar output c
     forecast
 :data portal link:
     {{"[link]({}/dataset/chem-v2-1h-9km)".format(DATA_PORTAL_URL)}}
+
+## Desert dust forecast for Europe
+:resource_id:
+    chem_dust-v1-1h-0p2deg
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/chem_dust-v1-1h-0p2deg)".format(DATA_PORTAL_URL)}}
 
 ## Ensemble Forecast
 :resource_id:
@@ -191,7 +215,7 @@ The following list provides information about available data. A similar output c
 `spartacus-v1-1m-1km` has stopped receiving data updates.
 :::
 
-## Spartacus v2 daily
+## Spartacus v2 daily (legacy)
 :resource_id:
     spartacus-v2-1d-1km
 :licence:
@@ -203,7 +227,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/spartacus-v2-1d-1km)".format(DATA_PORTAL_URL)}}
 
-## Spartacus v2 monthly
+## Spartacus v2 monthly (legacy)
 :resource_id:
     spartacus-v2-1m-1km
 :licence:
@@ -215,7 +239,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/spartacus-v2-1m-1km)".format(DATA_PORTAL_URL)}}
 
-## Spartacus v2 seasonal
+## Spartacus v2 seasonal (legacy)
 :resource_id:
     spartacus-v2-1q-1km
 :licence:
@@ -227,8 +251,7 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/spartacus-v2-1q-1km)".format(DATA_PORTAL_URL)}}
 
-
-## Spartacus v2 yearly
+## Spartacus v2 yearly (legacy)
 :resource_id:
     spartacus-v2-1y-1km
 :licence:
@@ -239,6 +262,54 @@ The following list provides information about available data. A similar output c
     historical
 :data portal link:
     {{"[link]({}/dataset/spartacus-v2-1y-1km)".format(DATA_PORTAL_URL)}}
+
+## Spartacus v3 daily
+:resource_id:
+    spartacus-v3-1d-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/spartacus-v3-1d-1km)".format(DATA_PORTAL_URL)}}
+
+## Spartacus v3 monthly
+:resource_id:
+  spartacus-v3-1m-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/spartacus-v3-1m-1km)".format(DATA_PORTAL_URL)}}
+
+## Spartacus v3 seasonal
+:resource_id:
+  spartacus-v3-1q-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/spartacus-v3-1q-1km)".format(DATA_PORTAL_URL)}}
+
+## Spartacus v3 yearly
+:resource_id:
+  spartacus-v3-1y-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    historical
+:data portal link:
+    {{"[link]({}/dataset/spartacus-v3-1y-1km)".format(DATA_PORTAL_URL)}}
 
 ## Synop weather station
 :resource_id:
