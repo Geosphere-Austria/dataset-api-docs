@@ -49,5 +49,5 @@ Because the request size is calculated before the request is processed missing v
 count. Therefore, a request may hit the request size limit even if no values for the requested range exist. For example 
 the request 
 `v1/station/historical/tawes-v1-10min?station_ids=11072&parameters=TL&parameters=TLMIN&parameters=TLMAX&start=1990-01-01&end=2000-01-01` 
-requesting multiple parameters for the 1990s for TAWES station `11072` (*Neusiedl am See*) will say the request is to big
+requesting multiple parameters for the 1990s for TAWES station `11072` (*Neusiedl am See*) will say the request is too big
 even if the station only went into service in 2016.
