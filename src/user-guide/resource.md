@@ -121,7 +121,8 @@ The following list provides information about available data. A similar output c
 :modes:
     forecast
 :data portal link:
-    {{"[link]({}/dataset/ensemble-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
+    {{"[link]({}/dataset/ensemble-v1-1h-2500m)".format(DATA_PORTAL_URL)}} (data created before 2026-06-16)  
+    {{"[link]({}/dataset/ensemble-v2-1h-2500m)".format(DATA_PORTAL_URL)}} (data created on or after 2026-06-16)
 
 ## INCA hourly
 :resource_id:
@@ -169,7 +170,8 @@ The following list provides information about available data. A similar output c
 :modes:
     forecast
 :data portal link:
-    {{"[link]({}/dataset/nwp-v1-1h-2500m)".format(DATA_PORTAL_URL)}}
+    {{"[link]({}/dataset/nwp-v1-1h-2500m)".format(DATA_PORTAL_URL)}} (data created before 2026-06-16)  
+    {{"[link]({}/dataset/nwp-v2-1h-2500m)".format(DATA_PORTAL_URL)}} (data created on or after 2026-06-16)
 
 ## Snowgrid CL v2
 :resource_id:
