@@ -11,7 +11,7 @@ All available dataset endpoints are listed in {{"[{}]({})".format(API_DATASETS, 
 
 ## Dataset Endpoint Structure.
 
-An dataset endpoint consists of five parts:
+A dataset endpoint consists of five parts:
 
 - a host
 - a version

@@ -32,7 +32,7 @@ bbox
 lat_lon 
     if _type is timeseries_
 
-    Latitude and longitude coordinate pair to be queried. Coordinates are [EPSG:4326](https://epsg.io/4326) encoded. More than coordinate pair can be provided.
+    Latitude and longitude coordinate pair to be queried. Coordinates are [EPSG:4326](https://epsg.io/4326) encoded. More than one coordinate pair can be provided.
 
     Example: `lat_lon=48,12&lat_lon=48.5,11.3`
 
