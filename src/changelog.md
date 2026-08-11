@@ -1,6 +1,25 @@
 (changelog)=
 # Changelog
 
+(changelog-2026-08-11)=
+## 2026-08-11
+
+### New request response header _datapoint-count_
+
+A new custom HTTP request response header was added. The _datapoint-count_ header value
+returns the number of datapoints that were requested from a dataset.
+```text
+// ...
+content-type	  application/json
+content-length	  292752
+datapoint-count   9369
+// ...
+```
+The number represents the total number of potential data points for the requested parameters, not necessarily the number 
+of existing values actually returned. Data points with `null` values are counted towards the total.
+
+If the [request size limit](#request_size_limit) was exceeded the _datapoint-count_ returns the estimated number of datapoints.
+
 (changelog-2026-07-08)=
 ## 2026-07-08
 
