@@ -52,6 +52,6 @@ the request
 requesting multiple parameters for the 1990s for TAWES station `11072` (*Neusiedl am See*) will say the request is too big
 even if the station only went into service in 2016.
 
-:::{tip}
-The request response header _datapoint-count_ returns the request size in number of requested datapoints!
+:::{hint}
+The request response header _datapoint-count_ returns the request size in number of requested datapoints.
 :::
