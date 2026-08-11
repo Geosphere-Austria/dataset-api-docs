@@ -3,11 +3,11 @@
     color: #052E37;
 }
 
-.rst-content :is(.note, .tip) {
+.rst-content :is(.note, .tip, .hint) {
     background: #BFCE40;
 }
 
-.rst-content :is(.note, .tip) .admonition-title
+.rst-content :is(.note, .tip, .hint) .admonition-title
 {
    background: #BFCE40; !important;
     color: #052E37
@@ -22,7 +22,7 @@
 .rst-content :is(.attention, .warning) > p > a {
     color: #BFCE40;
 }
-.rst-content :is(.note, .tip) > p > a {
+.rst-content :is(.note, .tip, .hint) > p > a {
     color: #FFFFFF;
 }
 

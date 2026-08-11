@@ -51,3 +51,7 @@ the request
 `v1/station/historical/tawes-v1-10min?station_ids=11072&parameters=TL&parameters=TLMIN&parameters=TLMAX&start=1990-01-01&end=2000-01-01` 
 requesting multiple parameters for the 1990s for TAWES station `11072` (*Neusiedl am See*) will say the request is too big
 even if the station only went into service in 2016.
+
+:::{hint}
+The request response header _datapoint-count_ returns the request size in number of requested datapoints.
+:::
