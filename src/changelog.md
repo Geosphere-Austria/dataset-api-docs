@@ -1,8 +1,8 @@
 (changelog)=
 # Changelog
 
-(changelog-2026-08-20)=
-## 2026-08-20
+(changelog-2026-08-24)=
+## 2026-08-24
 
 ### New Resource `nwp-v2-1h-1km`
 
