@@ -124,6 +124,19 @@ The following list provides information about available data. A similar output c
     {{"[link]({}/dataset/ensemble-v1-1h-2500m)".format(DATA_PORTAL_URL)}} (data created before 2026-06-16)  
     {{"[link]({}/dataset/ensemble-v2-1h-2500m)".format(DATA_PORTAL_URL)}} (data created on or after 2026-06-16)
 
+## Ensemble Forecast v2 1km
+:resource_id:
+    ensemble-v2-1h-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/ensemble-v2-1h-1km)".format(DATA_PORTAL_URL)}} 
+
+
 ## INCA hourly
 :resource_id:
     inca-v1-1h-1km
@@ -172,6 +185,19 @@ The following list provides information about available data. A similar output c
 :data portal link:
     {{"[link]({}/dataset/nwp-v1-1h-2500m)".format(DATA_PORTAL_URL)}} (data created before 2026-06-16)  
     {{"[link]({}/dataset/nwp-v2-1h-2500m)".format(DATA_PORTAL_URL)}} (data created on or after 2026-06-16)
+
+## Numerical Weather Prediction v2
+:resource_id:
+    nwp-v2-1h-1km
+:licence:
+    {{LICENSE}}
+:types:
+    grid, timeseries
+:modes:
+    forecast
+:data portal link:
+    {{"[link]({}/dataset/nwp-v2-1h-1km)".format(DATA_PORTAL_URL)}}     
+
 
 ## Snowgrid CL v2
 :resource_id:

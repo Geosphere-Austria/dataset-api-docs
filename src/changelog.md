@@ -1,6 +1,14 @@
 (changelog)=
 # Changelog
 
+(changelog-2026-08-24)=
+## 2026-08-24
+
+### New Resource `nwp-v2-1h-1km`
+
+### New Resource `ensemble-v2-1h-1km`
+
+
 (changelog-2026-08-11)=
 ## 2026-08-11
 
