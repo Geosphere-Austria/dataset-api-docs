@@ -6,7 +6,7 @@ variables:
   PROD_IMAGE_NAME: $HARBOR_REGISTRY/$CI_PROJECT_NAME/$CI_PROJECT_NAME
 
 include:
-  - component: gitlab.geosphere.at/app/devops/ci-components/buildah/build-and-push@1.0.0
+  - component: gitlab.geosphere.at/app/devops/ci-components/buildah/build-and-push@1
     inputs:
       job_name: build_image
       buildah_registry_url: ${HARBOR_REGISTRY}/${QUAY_CACHE}
